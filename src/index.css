@@ -1,0 +1,151 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-card-border: hsl(var(--card-border));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-popover-border: hsl(var(--popover-border));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-chart-1: hsl(var(--chart-1));
+  --color-chart-2: hsl(var(--chart-2));
+  --color-chart-3: hsl(var(--chart-3));
+  --color-chart-4: hsl(var(--chart-4));
+  --color-chart-5: hsl(var(--chart-5));
+
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --background: 0 0% 100%; /* #FFFFFF */
+  --foreground: 0 0% 1%; /* #030303 */
+  
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 1%;
+  --card-border: 0 0% 92%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 1%;
+  --popover-border: 0 0% 92%;
+
+  --primary: 20 89% 54%; /* #F26621 */
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 244 45% 27%; /* #292563 */
+  --secondary-foreground: 0 0% 100%;
+
+  --muted: 0 0% 97%; /* #F8F8F8 */
+  --muted-foreground: 0 0% 40%;
+
+  --accent: 20 89% 54%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 0 0% 92%; /* #EAEAEA */
+  --input: 0 0% 92%;
+  --ring: 20 89% 54%;
+
+  --chart-1: 20 89% 54%;
+  --chart-2: 244 45% 27%;
+  --chart-3: 0 0% 80%;
+  --chart-4: 20 80% 60%;
+  --chart-5: 244 40% 40%;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 0 0% 100%; 
+  --foreground: 0 0% 1%;
+  /* Force light mode since not requested to support true dark mode */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Accessibility classes */
+.high-contrast { filter: contrast(150%); }
+.grayscale-mode { filter: grayscale(100%); }
+html.text-large { font-size: 112%; }
+html.text-small { font-size: 88%; }
+
+html.dark-mode {
+  --background: 233 27% 14%; /* #1a1a2e */
+  --foreground: 0 0% 88%; /* #e0e0e0 */
+  --card: 233 27% 18%;
+  --card-foreground: 0 0% 88%;
+  --card-border: 233 27% 24%;
+  --muted: 233 27% 18%;
+  --muted-foreground: 0 0% 70%;
+  --border: 233 27% 24%;
+  --secondary: 20 89% 54%; /* swap secondary to primary for visibility */
+}
+
+.underline-links a {
+  text-decoration: underline !important;
+}
+
+html.focus-mode body {
+  font-size: 20px;
+  line-height: 1.9;
+}
+
+html.focus-mode header,
+html.focus-mode footer,
+html.focus-mode .chapter-nav {
+  display: none !important;
+}
+
+html.focus-mode main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+html.focus-mode p {
+  margin-bottom: 2em;
+}
