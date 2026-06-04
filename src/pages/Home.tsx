@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { Layout } from "@/components/Layout";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 
 const FadeIn = ({ children, delay = 0, className = "" }: { children: React.ReactNode, delay?: number, className?: string }) => {
@@ -82,21 +81,12 @@ export default function Home() {
             </div>
 
             <div className="hidden lg:block relative">
-              <motion.div 
-                animate={{ y: [0, -15, 0] }} 
+              <motion.div
+                animate={{ y: [0, -15, 0] }}
                 transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
                 className="w-full aspect-[3/4] max-w-md mx-auto rounded-2xl shadow-2xl overflow-hidden relative"
                 style={{ backgroundImage: "url('/illustration.jpeg')", backgroundSize: "cover", backgroundPosition: "center" }}
-              >
-                {/* <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #292563 0%, #F26621 100%)" }}></div> */}
-                <div className="absolute inset-x-8 bottom-12 text-white">
-                  <div className="flex gap-4 mb-8">
-                    {/* <span className="font-heading font-bold text-xl">HSBC</span>
-                    <span className="font-heading font-bold text-xl">DASRA</span> */}
-                  </div>
-                  <h2 className="font-heading font-bold text-4xl leading-tight mb-4">FROM PROMISE TO PRACTICE</h2>
-                </div>
-              </motion.div>
+              />
             </div>
           </div>
         </div>
@@ -105,46 +95,46 @@ export default function Home() {
       {/* Section 2: About HSBC */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <FadeIn>
-              <div className="aspect-square rounded-3xl bg-muted overflow-hidden relative group">
-                <div className="absolute inset-0 bg-gradient-to-tr from-secondary/10 to-primary/10 mix-blend-multiply"></div>
-                <div className="absolute inset-0 flex items-center justify-center p-12">
-                  <div className="w-full h-full border-4 border-secondary/20 rounded-full flex items-center justify-center relative">
-                    <div className="w-3/4 h-3/4 border-4 border-primary/30 rounded-full absolute -top-4 -right-4"></div>
-                    {/* <span className="font-heading font-bold text-5xl text-secondary">HSBC</span> */}
-                    <img src="/HSBC-Logo.png" alt="HSBC" className="h-48 w-auto object-contain" />
-                  </div>
-                </div>
-              </div>
+          <FadeIn>
+            <h2 className="text-4xl font-heading font-bold text-primary mb-3">About HSBC</h2>
+            <div className="w-16 h-1 bg-primary rounded-full mb-12" />
+          </FadeIn>
+
+          <div className="space-y-10">
+            <FadeIn delay={0.1}>
+              <h3 className="font-heading font-bold text-secondary uppercase tracking-widest text-sm mb-3">
+                HSBC India and Sustainability
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-justify">
+                HSBC India’s strategy to support sustainable economic growth, focuses on Community Investment (CSR interventions), Sustainable Operations, Sustainable Finance and Sustainability Risk. The strategy is delivered through a combination of programmes, collaboration, and partnerships. We believe it requires a concerted effort between business, governments and other stakeholders on policies and programmes to support transition to a more sustainable future.
+              </p>
             </FadeIn>
-            <div>
-              <FadeIn>
-                <h2 className="text-4xl font-heading font-bold text-secondary mb-8">About HSBC</h2>
-                <div className="space-y-6 text-lg text-gray-600 mb-10">
-                  <p>HSBC India's strategy to support sustainable economic growth focuses on Community Investment (CSR interventions), Sustainable Operations, Sustainable Finance and Sustainability Risk.</p>
-                  <p>HSBC India offers a full range of banking and financial services through 31 branches across 19 cities. Over 47,000 employees in banking, investment banking, capital markets, asset management, insurance, software development.</p>
-                  <p>HSBC Holdings plc, headquartered in London, serves customers worldwide from 56 countries with assets of US$3,306bn.</p>
-                </div>
-              </FadeIn>
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  { label: "Branches", val: 31 },
-                  { label: "Cities", val: 19 },
-                  { label: "Employees", val: 47000, suffix: "+" },
-                  { label: "Countries", val: 56 }
-                ].map((stat, i) => (
-                  <FadeIn key={i} delay={i * 0.1}>
-                    <div className="p-6 rounded-2xl bg-muted border border-border">
-                      <div className="text-3xl font-heading font-bold text-primary mb-1">
-                        <Counter to={stat.val} suffix={stat.suffix} />
-                      </div>
-                      <div className="text-sm font-medium text-secondary">{stat.label}</div>
-                    </div>
-                  </FadeIn>
-                ))}
-              </div>
-            </div>
+
+            <FadeIn delay={0.2}>
+              <h3 className="font-heading font-bold text-secondary uppercase tracking-widest text-sm mb-3">
+                HSBC India
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-justify">
+                HSBC India offers a full range of banking and financial services through 31 branches across 19 cities. The Bank is at the forefront in arranging deals for Indian companies investing overseas and foreign investments into the country. HSBC is one of India’s leading financial services groups, with over 47,000 employees in its banking, investment banking and capital markets, asset management, insurance, software development and global resourcing operations in the country. It is a leading custodian in India.
+              </p>
+            </FadeIn>
+
+            <FadeIn delay={0.3}>
+              <h3 className="font-heading font-bold text-secondary uppercase tracking-widest text-sm mb-3">
+                HSBC HOLDINGS PLC
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-justify">
+                HSBC Holdings plc, the parent company of HSBC, is headquartered in London. HSBC serves customers worldwide from offices in 56 countries and territories. With assets of US$3,306bn at 31 March 2026, HSBC is one of the world’s largest banking and financial services organisations.
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.3}>
+              <h3 className="font-heading font-bold text-secondary uppercase tracking-widest text-sm mb-3">
+                THE HONGKONG AND SHANGHAI BANKING CORPORATION LIMITED
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-justify">
+                The Hongkong and Shanghai Banking Corporation Limited is the founding member of the HSBC Group. HSBC serves customers worldwide from offices in 56 countries and territories. With assets of US$3,306bn at 31 March 2026, HSBC is one of the world’s largest banking and financial services organisations.
+              </p>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -152,40 +142,34 @@ export default function Home() {
       {/* Section 3: About Dasra */}
       <section className="py-24 bg-muted">
         <div className="container mx-auto px-6 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1">
+          <div className="grid grid-cols-1 gap-16 items-center">
+            <div className="">
               <FadeIn>
-                <h2 className="text-4xl font-heading font-bold text-secondary mb-8">About Dasra</h2>
-                <div className="space-y-6 text-lg text-gray-600 mb-10">
-                  <p>Dasra, meaning 'enlightened giving' in Sanskrit, is a pioneering strategic philanthropic organization that aims for a transformed India where a billion thrive with dignity and equity.</p>
-                  <p>In 1999, Dasra began as a venture philanthropy fund. Over 26 years, we have engaged 1,208+ funders, mobilised $475 million in philanthropic capital, and supported 2,623+ organizations.</p>
-                </div>
+                <h2 className="text-4xl font-heading font-bold text-secondary mb-3">About Dasra</h2>
+                <div className="w-16 h-1 bg-secondary rounded-full mb-12" />
               </FadeIn>
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  { label: "Funders", val: 1208, suffix: "+" },
-                  { label: "Mobilized", val: 475, prefix: "$", suffix: "M" },
-                  { label: "Organizations", val: 2623, suffix: "+" },
-                  { label: "Years", val: 26 }
-                ].map((stat, i) => (
-                  <FadeIn key={i} delay={i * 0.1}>
-                    <div className="p-6 rounded-2xl bg-white border border-border">
-                      <div className="text-3xl font-heading font-bold text-primary mb-1">
-                        <Counter to={stat.val} prefix={stat.prefix} suffix={stat.suffix} />
-                      </div>
-                      <div className="text-sm font-medium text-secondary">{stat.label}</div>
-                    </div>
-                  </FadeIn>
-                ))}
+              <div className="space-y-10">
+                <FadeIn delay={0.1}>
+
+                  <p className="text-gray-600 leading-relaxed text-justify mb-1">
+                    Dasra, meaning ‘enlightened giving’ in Sanskrit, is a pioneering strategic philanthropic organization that aims for a transformed India where a billion thrive with dignity and equity.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed text-justify">
+                    In 1999, Dasra began as a venture philanthropy fund to invest in earlystage nonprofit organizations in India. We recognized early that we had the responsibility, the capability, the connections, and the energy to be a long-game change agent and we resolved to make a transformative difference through it. Dasra has gone through different stages of evolution - from a philanthropy fund to a bridge between NGOs and funders, and now two decades later, it has cemented its identity as a leading nonprofit systems orchestrator working with diverse stakeholders across the social impact ecosystem. Over 26 years, we have engaged 1,208+ funders, mobilised $475 million in philanthropic capital, and supported 2,623+ organizations. We strengthen organizations and leaders, build philanthropy infrastructure, and unlock knowledge and long-term capital to cocreate solutions that shift systems and advance a more equitable future.
+                  </p>
+                </FadeIn>
+
+                <FadeIn delay={0.2}>
+                  <h3 className="font-heading font-bold text-secondary uppercase tracking-widest text-sm mb-3">
+                    How to cite
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-justify">
+                    Dasra, From Promise to Practice: A Landscape Report on Disability Inclusion and Civil Society Action in India (Mumbai: Dasra, 2026).
+                  </p>
+                </FadeIn>
+
               </div>
             </div>
-            <FadeIn className="order-1 lg:order-2">
-              <div className="aspect-square rounded-3xl bg-secondary overflow-hidden relative p-12 flex items-center justify-center">
-                <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle at center, rgba(242, 102, 33, 0.2) 0%, transparent 70%)" }}></div>
-                {/* <span className="font-heading font-bold text-5xl text-white relative z-10">DASRA</span> */}
-                <img src="/Dasra.png" alt="Dasra" className="h-48 w-auto object-contain" />
-              </div>
-            </FadeIn>
           </div>
         </div>
       </section>
@@ -196,16 +180,9 @@ export default function Home() {
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <FadeIn>
-              <div className="aspect-square rounded-2xl bg-white/5 border border-white/10 p-8 flex items-center justify-center relative overflow-hidden">
+              <div className="aspect-square rounded-2xl p-8 flex items-center justify-center relative overflow-hidden -ml-9">
                 <div className="absolute w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
-                {/* <svg viewBox="0 0 200 200" className="w-full h-full text-white/80 drop-shadow-2xl z-10" fill="currentColor">
-                  <path d="M100 20a20 20 0 100 40 20 20 0 000-40zm-15 50a15 15 0 00-15 15v40a15 15 0 0030 0v-10h10v50a15 15 0 0030 0v-40a15 15 0 00-15-15h-10V85a15 15 0 00-30 0z" />
-                  <circle cx="85" cy="180" r="10" />
-                  <circle cx="125" cy="180" r="10" />
-                  <path d="M70 180h60" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
-                </svg> */}
-                <img src="/illustration.jpeg" alt=""  className="bg-cover bg-center "/>
-                {/* <div   style={{ backgroundImage: "url('/illustration.jpeg')", backgroundSize: "cover", backgroundPosition: "center" }}></div> */}
+                <img src="/illustration.jpeg" alt="" className="bg-cover bg-center " />
               </div>
             </FadeIn>
             <div>
@@ -213,13 +190,48 @@ export default function Home() {
                 <div className="text-primary font-heading font-bold tracking-widest uppercase mb-4 text-sm">About the Artwork</div>
                 <h2 className="text-4xl font-heading font-bold mb-8">Rolling Against Odds</h2>
                 <div className="space-y-6 text-lg text-white/80 mb-10 leading-relaxed">
-                  <p>This painting portrays a girl with one artificial leg who embraces her disability with courage and pride. Balancing beautifully on skates, she transforms a challenge into a graceful expression of strength and resilience. She flaunts her difference, not as a weakness, but as a source of joy, confidence, and inspiration.</p>
-                  <p><strong>Shaily</strong> — An aspiring artist with a locomotor disability and an amputated right hand, Shaily paints solely with their left hand — a powerful testament to resilience and creativity.</p>
+                  <p>This painting portrays a girl with one artificial leg who embraces her disability with courage and pride. Balancing beautifully on skates, she transforms a challenge into a graceful expression of strength and resilience. She flaunts her difference, not as a weakness, but as a source of joy, confidence, and inspiration. Rolling Against Odds celebrates her journey of balance, inclusion, and unshakable determination — showing the world that nothing, not even disability, can stop her from living fully, freely, and beautifully.</p>
                 </div>
-                <p className="text-sm text-white/60 italic">Discover more inspiring artwork by artists with disabilities at Atypical Advantage Arts.</p>
               </FadeIn>
             </div>
           </div>
+          {/* About the Artist */}
+          <FadeIn>
+            <div className="mt-20 pt-16 border-t border-white/10">
+              <h2 className="text-4xl font-heading font-bold text-primary mb-10">About the Artist</h2>
+              <div className="space-y-6 text-lg text-white/80 leading-relaxed">
+                <div>
+                  <h3 className="font-heading font-bold text-white text-xl mb-3">Shaily</h3>
+                  <p>
+                    An aspiring artist with a locomotor disability and an amputated right hand, Shaily paints solely with their left hand — a powerful testament to resilience and creativity. Art has been an inseparable part of their life since childhood. At the age of six, they began sketching deities from calendar images, instinctively seeing the world through a unique lens. While others painted the sun in shades of yellow and orange, they envisioned it in hues of white and blue.
+                  </p>
+                </div>
+                <p>
+                  Untrained in any formal institution, their artistry is driven purely by passion and instinct. Praised early on for distinctive handwriting and imaginative thinking, they discovered that true joy in art lies in expressing emotions rather than replicating visuals. For them, painting is not just a creative outlet, but a means of transformation — turning limitations into possibilities and imagination into impactful expression.
+                </p>
+                <p className="font-semibold text-white">
+                We also extend our sincere thanks to <a
+                    href="https://atypicaladvantage.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary underline underline-offset-2 hover:text-primary/80 transition-colors"
+                  >Atypical Advantage</a> for their support in helping source and facilitate the artwork for the cover page of this report.
+                </p>
+                <p>
+                Discover more inspiring artwork by artists with disabilities at{" "}
+                  <a
+                    href="https://atypicaladvantage.in/atypical-art/arts"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary underline underline-offset-2 hover:text-primary/80 transition-colors"
+                  >
+                    Atypical Advantage Arts
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+          </FadeIn>
         </div>
       </section>
 

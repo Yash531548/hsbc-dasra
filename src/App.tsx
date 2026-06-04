@@ -31,7 +31,7 @@ function Router() {
       <Route path="/chapter-5" component={Chapter5} />
       <Route path="/chapter-6" component={Chapter6} />
       <Route path="/resources" component={Resources} />
-      <Route path="/accessibility" component={AccessibilityPage} />
+      {/* <Route path="/accessibility" component={AccessibilityPage} /> */}
       <Route component={NotFound} />
     </Switch>
   );
