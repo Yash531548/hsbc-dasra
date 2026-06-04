@@ -15,12 +15,15 @@ import Chapter6 from "@/pages/Chapter6";
 import Resources from "@/pages/Resources";
 import AccessibilityPage from "@/pages/AccessibilityPage";
 import NotFound from "@/pages/not-found";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
 function Router() {
   return (
-    <Switch>
+    <>
+      <ScrollToTop />
+      <Switch>
       <Route path="/" component={Home} />
       <Route path="/foreword" component={Foreword} />
       <Route path="/executive-summary" component={ExecutiveSummary} />
@@ -33,7 +36,8 @@ function Router() {
       <Route path="/resources" component={Resources} />
       {/* <Route path="/accessibility" component={AccessibilityPage} /> */}
       <Route component={NotFound} />
-    </Switch>
+      </Switch>
+    </>
   );
 }
 
