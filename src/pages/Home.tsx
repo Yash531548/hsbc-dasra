@@ -150,7 +150,7 @@ export default function Home() {
               </FadeIn>
               <div className="space-y-10">
                 <FadeIn delay={0.1}>
-                  
+
                   <p className="text-gray-600 leading-relaxed text-justify mb-1">
                     Dasra, meaning ‘enlightened giving’ in Sanskrit, is a pioneering strategic philanthropic organization that aims for a transformed India where a billion thrive with dignity and equity.
                   </p>
@@ -195,7 +195,43 @@ export default function Home() {
               </FadeIn>
             </div>
           </div>
-          <div className="mt-7">hi</div>
+          {/* About the Artist */}
+          <FadeIn>
+            <div className="mt-20 pt-16 border-t border-white/10">
+              <h2 className="text-4xl font-heading font-bold text-primary mb-10">About the Artist</h2>
+              <div className="space-y-6 text-lg text-white/80 leading-relaxed">
+                <div>
+                  <h3 className="font-heading font-bold text-white text-xl mb-3">Shaily</h3>
+                  <p>
+                    An aspiring artist with a locomotor disability and an amputated right hand, Shaily paints solely with their left hand — a powerful testament to resilience and creativity. Art has been an inseparable part of their life since childhood. At the age of six, they began sketching deities from calendar images, instinctively seeing the world through a unique lens. While others painted the sun in shades of yellow and orange, they envisioned it in hues of white and blue.
+                  </p>
+                </div>
+                <p>
+                  Untrained in any formal institution, their artistry is driven purely by passion and instinct. Praised early on for distinctive handwriting and imaginative thinking, they discovered that true joy in art lies in expressing emotions rather than replicating visuals. For them, painting is not just a creative outlet, but a means of transformation — turning limitations into possibilities and imagination into impactful expression.
+                </p>
+                <p className="font-semibold text-white">
+                We also extend our sincere thanks to <a
+                    href="https://atypicaladvantage.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary underline underline-offset-2 hover:text-primary/80 transition-colors"
+                  >Atypical Advantage</a> for their support in helping source and facilitate the artwork for the cover page of this report.
+                </p>
+                <p>
+                Discover more inspiring artwork by artists with disabilities at{" "}
+                  <a
+                    href="https://atypicaladvantage.in/atypical-art/arts"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary underline underline-offset-2 hover:text-primary/80 transition-colors"
+                  >
+                    Atypical Advantage Arts
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
