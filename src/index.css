@@ -2,6 +2,90 @@
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
 
+/* ── Elizeth (headings) ── */
+@font-face {
+  font-family: 'Elizeth';
+  src: url('/Dasra fonts/Elizeth-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Elizeth';
+  src: url('/Dasra fonts/Elizeth-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Elizeth';
+  src: url('/Dasra fonts/Elizeth-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Elizeth';
+  src: url('/Dasra fonts/Elizeth-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Elizeth';
+  src: url('/Dasra fonts/Elizeth-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Elizeth';
+  src: url('/Dasra fonts/Elizeth-Extrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* ── Manrope (body) ── */
+@font-face {
+  font-family: 'Manrope';
+  src: url('/Dasra fonts/Manrope-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('/Dasra fonts/Manrope-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('/Dasra fonts/Manrope-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('/Dasra fonts/Manrope-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('/Dasra fonts/Manrope-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('/Dasra fonts/Manrope-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* ── Machinen (accent / mono) ── */
+@font-face {
+  font-family: 'Machinen';
+  src: url('/Dasra fonts/machinen.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -40,8 +124,9 @@
   --color-chart-4: hsl(var(--chart-4));
   --color-chart-5: hsl(var(--chart-5));
 
-  --font-sans: 'Inter', sans-serif;
-  --font-heading: 'Poppins', sans-serif;
+  --font-sans: 'Manrope', sans-serif;
+  --font-heading: 'Elizeth', sans-serif;
+  --font-accent: 'Machinen', sans-serif;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

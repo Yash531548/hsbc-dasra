@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { Layout } from "@/components/Layout";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 
 const FadeIn = ({ children, delay = 0, className = "" }: { children: React.ReactNode, delay?: number, className?: string }) => {
@@ -82,21 +81,12 @@ export default function Home() {
             </div>
 
             <div className="hidden lg:block relative">
-              <motion.div 
-                animate={{ y: [0, -15, 0] }} 
+              <motion.div
+                animate={{ y: [0, -15, 0] }}
                 transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
                 className="w-full aspect-[3/4] max-w-md mx-auto rounded-2xl shadow-2xl overflow-hidden relative"
                 style={{ backgroundImage: "url('/illustration.jpeg')", backgroundSize: "cover", backgroundPosition: "center" }}
-              >
-                {/* <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #292563 0%, #F26621 100%)" }}></div> */}
-                <div className="absolute inset-x-8 bottom-12 text-white">
-                  <div className="flex gap-4 mb-8">
-                    {/* <span className="font-heading font-bold text-xl">HSBC</span>
-                    <span className="font-heading font-bold text-xl">DASRA</span> */}
-                  </div>
-                  <h2 className="font-heading font-bold text-4xl leading-tight mb-4">FROM PROMISE TO PRACTICE</h2>
-                </div>
-              </motion.div>
+              />
             </div>
           </div>
         </div>
@@ -105,46 +95,46 @@ export default function Home() {
       {/* Section 2: About HSBC */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <FadeIn>
-              <div className="aspect-square rounded-3xl bg-muted overflow-hidden relative group">
-                <div className="absolute inset-0 bg-gradient-to-tr from-secondary/10 to-primary/10 mix-blend-multiply"></div>
-                <div className="absolute inset-0 flex items-center justify-center p-12">
-                  <div className="w-full h-full border-4 border-secondary/20 rounded-full flex items-center justify-center relative">
-                    <div className="w-3/4 h-3/4 border-4 border-primary/30 rounded-full absolute -top-4 -right-4"></div>
-                    {/* <span className="font-heading font-bold text-5xl text-secondary">HSBC</span> */}
-                    <img src="/HSBC-Logo.png" alt="HSBC" className="h-48 w-auto object-contain" />
-                  </div>
-                </div>
-              </div>
+          <FadeIn>
+            <h2 className="text-4xl font-heading font-bold text-primary mb-3">About HSBC</h2>
+            <div className="w-16 h-1 bg-primary rounded-full mb-12" />
+          </FadeIn>
+
+          <div className="space-y-10">
+            <FadeIn delay={0.1}>
+              <h3 className="font-heading font-bold text-secondary uppercase tracking-widest text-sm mb-3">
+                HSBC India and Sustainability
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-justify">
+                HSBC India’s strategy to support sustainable economic growth, focuses on Community Investment (CSR interventions), Sustainable Operations, Sustainable Finance and Sustainability Risk. The strategy is delivered through a combination of programmes, collaboration, and partnerships. We believe it requires a concerted effort between business, governments and other stakeholders on policies and programmes to support transition to a more sustainable future.
+              </p>
             </FadeIn>
-            <div>
-              <FadeIn>
-                <h2 className="text-4xl font-heading font-bold text-secondary mb-8">About HSBC</h2>
-                <div className="space-y-6 text-lg text-gray-600 mb-10">
-                  <p>HSBC India's strategy to support sustainable economic growth focuses on Community Investment (CSR interventions), Sustainable Operations, Sustainable Finance and Sustainability Risk.</p>
-                  <p>HSBC India offers a full range of banking and financial services through 31 branches across 19 cities. Over 47,000 employees in banking, investment banking, capital markets, asset management, insurance, software development.</p>
-                  <p>HSBC Holdings plc, headquartered in London, serves customers worldwide from 56 countries with assets of US$3,306bn.</p>
-                </div>
-              </FadeIn>
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  { label: "Branches", val: 31 },
-                  { label: "Cities", val: 19 },
-                  { label: "Employees", val: 47000, suffix: "+" },
-                  { label: "Countries", val: 56 }
-                ].map((stat, i) => (
-                  <FadeIn key={i} delay={i * 0.1}>
-                    <div className="p-6 rounded-2xl bg-muted border border-border">
-                      <div className="text-3xl font-heading font-bold text-primary mb-1">
-                        <Counter to={stat.val} suffix={stat.suffix} />
-                      </div>
-                      <div className="text-sm font-medium text-secondary">{stat.label}</div>
-                    </div>
-                  </FadeIn>
-                ))}
-              </div>
-            </div>
+
+            <FadeIn delay={0.2}>
+              <h3 className="font-heading font-bold text-secondary uppercase tracking-widest text-sm mb-3">
+                HSBC India
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-justify">
+                HSBC India offers a full range of banking and financial services through 31 branches across 19 cities. The Bank is at the forefront in arranging deals for Indian companies investing overseas and foreign investments into the country. HSBC is one of India’s leading financial services groups, with over 47,000 employees in its banking, investment banking and capital markets, asset management, insurance, software development and global resourcing operations in the country. It is a leading custodian in India.
+              </p>
+            </FadeIn>
+
+            <FadeIn delay={0.3}>
+              <h3 className="font-heading font-bold text-secondary uppercase tracking-widest text-sm mb-3">
+                HSBC HOLDINGS PLC
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-justify">
+                HSBC Holdings plc, the parent company of HSBC, is headquartered in London. HSBC serves customers worldwide from offices in 56 countries and territories. With assets of US$3,306bn at 31 March 2026, HSBC is one of the world’s largest banking and financial services organisations.
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.3}>
+              <h3 className="font-heading font-bold text-secondary uppercase tracking-widest text-sm mb-3">
+                THE HONGKONG AND SHANGHAI BANKING CORPORATION LIMITED
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-justify">
+                The Hongkong and Shanghai Banking Corporation Limited is the founding member of the HSBC Group. HSBC serves customers worldwide from offices in 56 countries and territories. With assets of US$3,306bn at 31 March 2026, HSBC is one of the world’s largest banking and financial services organisations.
+              </p>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -204,7 +194,7 @@ export default function Home() {
                   <circle cx="125" cy="180" r="10" />
                   <path d="M70 180h60" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
                 </svg> */}
-                <img src="/illustration.jpeg" alt=""  className="bg-cover bg-center "/>
+                <img src="/illustration.jpeg" alt="" className="bg-cover bg-center " />
                 {/* <div   style={{ backgroundImage: "url('/illustration.jpeg')", backgroundSize: "cover", backgroundPosition: "center" }}></div> */}
               </div>
             </FadeIn>

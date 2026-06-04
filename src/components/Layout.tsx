@@ -69,9 +69,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
               )}
             </div>
 
-            <Link href="/accessibility" className="text-sm font-medium text-secondary hover:text-primary transition-colors">
+            {/* <Link href="/accessibility" className="text-sm font-medium text-secondary hover:text-primary transition-colors">
               Accessibility
-            </Link>
+            </Link> */}
 
             <a 
               href="/pdf/report.pdf" 
