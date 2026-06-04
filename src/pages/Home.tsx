@@ -142,40 +142,34 @@ export default function Home() {
       {/* Section 3: About Dasra */}
       <section className="py-24 bg-muted">
         <div className="container mx-auto px-6 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1">
+          <div className="grid grid-cols-1 gap-16 items-center">
+            <div className="">
               <FadeIn>
-                <h2 className="text-4xl font-heading font-bold text-secondary mb-8">About Dasra</h2>
-                <div className="space-y-6 text-lg text-gray-600 mb-10">
-                  <p>Dasra, meaning 'enlightened giving' in Sanskrit, is a pioneering strategic philanthropic organization that aims for a transformed India where a billion thrive with dignity and equity.</p>
-                  <p>In 1999, Dasra began as a venture philanthropy fund. Over 26 years, we have engaged 1,208+ funders, mobilised $475 million in philanthropic capital, and supported 2,623+ organizations.</p>
-                </div>
+                <h2 className="text-4xl font-heading font-bold text-secondary mb-3">About Dasra</h2>
+                <div className="w-16 h-1 bg-secondary rounded-full mb-12" />
               </FadeIn>
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  { label: "Funders", val: 1208, suffix: "+" },
-                  { label: "Mobilized", val: 475, prefix: "$", suffix: "M" },
-                  { label: "Organizations", val: 2623, suffix: "+" },
-                  { label: "Years", val: 26 }
-                ].map((stat, i) => (
-                  <FadeIn key={i} delay={i * 0.1}>
-                    <div className="p-6 rounded-2xl bg-white border border-border">
-                      <div className="text-3xl font-heading font-bold text-primary mb-1">
-                        <Counter to={stat.val} prefix={stat.prefix} suffix={stat.suffix} />
-                      </div>
-                      <div className="text-sm font-medium text-secondary">{stat.label}</div>
-                    </div>
-                  </FadeIn>
-                ))}
+              <div className="space-y-10">
+                <FadeIn delay={0.1}>
+                  
+                  <p className="text-gray-600 leading-relaxed text-justify mb-1">
+                    Dasra, meaning ‘enlightened giving’ in Sanskrit, is a pioneering strategic philanthropic organization that aims for a transformed India where a billion thrive with dignity and equity.
+                  </p>
+                  <p className="text-gray-600 leading-relaxed text-justify">
+                    In 1999, Dasra began as a venture philanthropy fund to invest in earlystage nonprofit organizations in India. We recognized early that we had the responsibility, the capability, the connections, and the energy to be a long-game change agent and we resolved to make a transformative difference through it. Dasra has gone through different stages of evolution - from a philanthropy fund to a bridge between NGOs and funders, and now two decades later, it has cemented its identity as a leading nonprofit systems orchestrator working with diverse stakeholders across the social impact ecosystem. Over 26 years, we have engaged 1,208+ funders, mobilised $475 million in philanthropic capital, and supported 2,623+ organizations. We strengthen organizations and leaders, build philanthropy infrastructure, and unlock knowledge and long-term capital to cocreate solutions that shift systems and advance a more equitable future.
+                  </p>
+                </FadeIn>
+
+                <FadeIn delay={0.2}>
+                  <h3 className="font-heading font-bold text-secondary uppercase tracking-widest text-sm mb-3">
+                    How to cite
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-justify">
+                    Dasra, From Promise to Practice: A Landscape Report on Disability Inclusion and Civil Society Action in India (Mumbai: Dasra, 2026).
+                  </p>
+                </FadeIn>
+
               </div>
             </div>
-            <FadeIn className="order-1 lg:order-2">
-              <div className="aspect-square rounded-3xl bg-secondary overflow-hidden relative p-12 flex items-center justify-center">
-                <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle at center, rgba(242, 102, 33, 0.2) 0%, transparent 70%)" }}></div>
-                {/* <span className="font-heading font-bold text-5xl text-white relative z-10">DASRA</span> */}
-                <img src="/Dasra.png" alt="Dasra" className="h-48 w-auto object-contain" />
-              </div>
-            </FadeIn>
           </div>
         </div>
       </section>
@@ -186,16 +180,9 @@ export default function Home() {
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <FadeIn>
-              <div className="aspect-square rounded-2xl bg-white/5 border border-white/10 p-8 flex items-center justify-center relative overflow-hidden">
+              <div className="aspect-square rounded-2xl p-8 flex items-center justify-center relative overflow-hidden -ml-9">
                 <div className="absolute w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
-                {/* <svg viewBox="0 0 200 200" className="w-full h-full text-white/80 drop-shadow-2xl z-10" fill="currentColor">
-                  <path d="M100 20a20 20 0 100 40 20 20 0 000-40zm-15 50a15 15 0 00-15 15v40a15 15 0 0030 0v-10h10v50a15 15 0 0030 0v-40a15 15 0 00-15-15h-10V85a15 15 0 00-30 0z" />
-                  <circle cx="85" cy="180" r="10" />
-                  <circle cx="125" cy="180" r="10" />
-                  <path d="M70 180h60" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
-                </svg> */}
                 <img src="/illustration.jpeg" alt="" className="bg-cover bg-center " />
-                {/* <div   style={{ backgroundImage: "url('/illustration.jpeg')", backgroundSize: "cover", backgroundPosition: "center" }}></div> */}
               </div>
             </FadeIn>
             <div>
@@ -203,13 +190,12 @@ export default function Home() {
                 <div className="text-primary font-heading font-bold tracking-widest uppercase mb-4 text-sm">About the Artwork</div>
                 <h2 className="text-4xl font-heading font-bold mb-8">Rolling Against Odds</h2>
                 <div className="space-y-6 text-lg text-white/80 mb-10 leading-relaxed">
-                  <p>This painting portrays a girl with one artificial leg who embraces her disability with courage and pride. Balancing beautifully on skates, she transforms a challenge into a graceful expression of strength and resilience. She flaunts her difference, not as a weakness, but as a source of joy, confidence, and inspiration.</p>
-                  <p><strong>Shaily</strong> — An aspiring artist with a locomotor disability and an amputated right hand, Shaily paints solely with their left hand — a powerful testament to resilience and creativity.</p>
+                  <p>This painting portrays a girl with one artificial leg who embraces her disability with courage and pride. Balancing beautifully on skates, she transforms a challenge into a graceful expression of strength and resilience. She flaunts her difference, not as a weakness, but as a source of joy, confidence, and inspiration. Rolling Against Odds celebrates her journey of balance, inclusion, and unshakable determination — showing the world that nothing, not even disability, can stop her from living fully, freely, and beautifully.</p>
                 </div>
-                <p className="text-sm text-white/60 italic">Discover more inspiring artwork by artists with disabilities at Atypical Advantage Arts.</p>
               </FadeIn>
             </div>
           </div>
+          <div className="mt-7">hi</div>
         </div>
       </section>
 
