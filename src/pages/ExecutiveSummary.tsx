@@ -10,29 +10,54 @@ export default function ExecutiveSummary() {
         <div className="container mx-auto px-6 max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <h1 className="text-4xl lg:text-5xl font-heading font-bold text-secondary mb-8">Executive Summary</h1>
-            
+
             <p className="text-xl text-gray-700 leading-relaxed mb-10">
-              Disability is often made to appear as something contained within the body or the mind: an impairment, a limitation, a difference to be named and managed. But exclusion is produced in the world around it — in institutions, infrastructures, and norms that decide whose needs are built in, and whose are treated as exceptions.
+              Disability is often made to appear as something contained within the body or the mind:
+              an impairment, a limitation, a difference to be named and managed. But exclusion is
+              produced in the world around it — in institutions, infrastructures, and norms that decide
+              whose needs are built in, and whose are treated as exceptions. In India, this reality now
+              sits alongside a stronger legal and policy framework. The RPwD Act, 2016, expanded
+              disability categories, and recent judicial decisions affirming accessibility, including digital
+              access, have widened the legal language of equality, dignity, and participation. Yet, for an
+              estimated 40–90 million persons with disabilities, the distance between legal recognition
+              and lived reality remains wide.
             </p>
 
-            <div className="p-8 bg-muted border-l-4 border-primary rounded-r-xl mb-12">
-              <p className="text-2xl font-heading font-bold text-secondary italic">
-                "Yet, for an estimated 40–90 million persons with disabilities, the distance between legal recognition and lived reality remains wide."
+            <div className="p-8 bg-box rounded-xl mb-12">
+              <p className="text-2xl font-heading font-medium text-black ">
+                "Yet, for an estimated <br /><span className="font-extrabold text-3xl">40–90 million </span><br /> persons with disabilities, the distance between legal recognition and lived reality remains wide."
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-16">
-              <div className="bg-muted p-6 rounded-2xl border border-border">
-                <div className="text-4xl font-heading font-bold text-primary mb-2">23</div>
-                <div className="text-sm font-medium text-secondary">Semi-structured interviews</div>
+            <p className="text-xl text-gray-700 leading-relaxed mb-10">Across education, employment, healthcare, public infrastructure, and civic life, access
+              is uneven, fragmented, and contingent on individual navigation rather than institutional
+              readiness. These exclusions are not incidental. They shape autonomy, participation,
+              household resilience, and economic life, with workforce non-participation by persons
+              with disabilities estimated to cost India 3–7% of GDP annually. Disability exclusion is
+              therefore not peripheral to development. It reveals how systems are built: whose needs
+              are anticipated, whose are treated as exceptions, and who is left negotiating for entry</p>
+
+
+            <p className="text-xl text-gray-700 leading-relaxed mb-10">This report draws on secondary research, 23 semi-structured interviews, two focus group
+              discussions (FGDs), and a diagnostic survey of 109 disability-focused nonprofits. The
+              findings are intended as a landscape diagnostic, with a focus on civil society action, rather
+              than a representative census. While the report surfaces patterns, tensions, and operating
+              realities across the ecosystem, we acknowledge the limitations. Furthermore, the
+              research has an implicit focus on civil society. The role of the family, community, the state,
+              and the market in ensuring disability inclusion has been explored in a limited manner. The
+              study may also be biased by our role as a sector intermediary. </p>
+            <div className="grid md:grid-cols-3 gap-6 mb-16 text-center">
+              <div className="bg-usp p-6 rounded-2xl border border-border">
+                <div className="text-4xl font-heading font-bold text-black mb-2">23</div>
+                <div className="text-sm font-medium text-black">Semi-structured interviews</div>
               </div>
-              <div className="bg-muted p-6 rounded-2xl border border-border">
-                <div className="text-4xl font-heading font-bold text-primary mb-2">2</div>
-                <div className="text-sm font-medium text-secondary">Focus group discussions (FGDs)</div>
+              <div className="bg-usp p-6 rounded-2xl border border-border text-center">
+                <div className="text-4xl font-heading font-bold text-black mb-2">2</div>
+                <div className="text-sm font-medium text-black">Focus group discussions (FGDs)</div>
               </div>
-              <div className="bg-muted p-6 rounded-2xl border border-border">
-                <div className="text-4xl font-heading font-bold text-primary mb-2">109</div>
-                <div className="text-sm font-medium text-secondary">Diagnostic survey of nonprofits</div>
+              <div className="bg-usp p-6 rounded-2xl border border-border text-center">
+                <div className="text-4xl font-heading font-bold text-black mb-2">109</div>
+                <div className="text-sm font-medium text-black">Diagnostic survey of nonprofits</div>
               </div>
             </div>
 
