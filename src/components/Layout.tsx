@@ -44,8 +44,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <Link href="/" className="text-sm font-medium text-secondary hover:text-primary transition-colors">
               Home
             </Link>
-            
-            <div 
+
+            <div
               className="relative"
               onMouseEnter={() => setDropdownOpen(true)}
               onMouseLeave={() => setDropdownOpen(false)}
@@ -53,12 +53,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <button className="flex items-center gap-1 text-sm font-medium text-secondary hover:text-primary transition-colors py-2">
                 Report Menu <ChevronDown className="w-4 h-4" />
               </button>
-              
+
               {dropdownOpen && (
                 <div className="absolute top-full left-0 w-80 bg-white shadow-xl border border-border rounded-xl py-2 animate-in fade-in slide-in-from-top-2">
                   {menuItems.map((item) => (
-                    <Link 
-                      key={item.href} 
+                    <Link
+                      key={item.href}
                       href={item.href}
                       className="block px-4 py-2 text-sm text-secondary hover:bg-muted hover:text-primary transition-colors"
                     >
@@ -73,8 +73,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
               Accessibility
             </Link> */}
 
-            <a 
-              href="/pdf/report.pdf" 
+            <a
+              href="/pdf/report.pdf"
               download
               className="flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-full text-sm font-medium transition-all"
             >
@@ -94,9 +94,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="flex flex-col p-6 gap-2">
             <Link href="/" onClick={() => setMobileMenuOpen(false)} className="py-3 text-lg font-medium text-secondary border-b border-border">Home</Link>
             {menuItems.map(item => (
-              <Link 
-                key={item.href} 
-                href={item.href} 
+              <Link
+                key={item.href}
+                href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
                 className="py-3 text-lg font-medium text-secondary border-b border-border"
               >
@@ -104,8 +104,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
               </Link>
             ))}
             <Link href="/accessibility" onClick={() => setMobileMenuOpen(false)} className="py-3 text-lg font-medium text-secondary border-b border-border">Accessibility</Link>
-            <a 
-              href="/pdf/report.pdf" 
+            <a
+              href="/pdf/report.pdf"
               download
               className="flex items-center justify-center gap-2 bg-primary text-white mt-6 py-3 rounded-full text-lg font-medium"
             >
@@ -120,8 +120,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="chapter-nav sticky top-[72px] lg:top-[88px] z-40 bg-muted/80 backdrop-blur-md border-b border-border py-3">
           <div className="container mx-auto px-6 max-w-7xl flex items-center justify-center lg:justify-start gap-4 lg:gap-8 overflow-x-auto no-scrollbar">
             {["1", "2", "3", "4", "5", "6"].map(num => (
-              <Link 
-                key={num} 
+              <Link
+                key={num}
                 href={`/chapter-${num}`}
                 className={`text-sm font-heading font-bold whitespace-nowrap flex items-center gap-2 ${currentChapter === num ? "text-primary" : "text-gray-400 hover:text-secondary"}`}
               >
@@ -139,13 +139,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <footer className="bg-white border-t border-border py-12 mt-auto">
         <div className="container mx-auto px-6 max-w-7xl flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-4">
-            <span className="text-secondary font-heading font-bold text-xl">HSBC</span>
-            <div className="w-px h-5 bg-border"></div>
-            <span className="text-secondary font-heading font-bold text-xl">DASRA</span>
+            <Link href="/" className="flex items-center gap-4 group">
+              <img src="/Dasra.png" alt="Dasra" className="h-14 w-auto object-contain" />
+              <div className="w-px h-6 bg-border"></div>
+              <img src="/HSBC-Logo.png" alt="HSBC" className="h-14 w-auto object-contain" />
+            </Link>
           </div>
-          
+
           <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-secondary">
-            <Link href="/accessibility" className="hover:text-primary transition-colors">Accessibility Statement</Link>
+            {/* <Link href="/accessibility" className="hover:text-primary transition-colors">Accessibility Statement</Link> */}
             <span className="text-border hidden md:inline">|</span>
             <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
             <span className="text-border hidden md:inline">|</span>

@@ -50,7 +50,7 @@ export default function Home() {
       {/* Section 1: Hero */}
       <section className="relative bg-muted overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-muted to-white"></div>
-        <div className="container mx-auto px-6 max-w-7xl relative z-10 py-20 lg:py-32">
+        <div className="container mx-auto px-6 max-w-7xl relative z-10 py-14 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="max-w-2xl">
               <FadeIn>
@@ -93,7 +93,7 @@ export default function Home() {
       </section>
 
       {/* Section 2: About HSBC */}
-      <section className="py-24 bg-white">
+      <section className="py-10 lg:py-24 bg-white">
         <div className="container mx-auto px-6 max-w-7xl">
           <FadeIn>
             <h2 className="text-4xl font-heading font-bold text-primary mb-3">About HSBC</h2>
@@ -140,7 +140,7 @@ export default function Home() {
       </section>
 
       {/* Section 3: About Dasra */}
-      <section className="py-24 bg-muted">
+      <section className="py-10 lg:py-24 bg-muted">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="grid grid-cols-1 gap-16 items-center">
             <div className="">
@@ -175,7 +175,7 @@ export default function Home() {
       </section>
 
       {/* Section 4: About the Artwork */}
-      <section className="py-24 bg-secondary text-white relative overflow-hidden">
+      <section className="py-10 md:py-24 bg-secondary text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)", backgroundSize: "32px 32px" }}></div>
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -236,7 +236,7 @@ export default function Home() {
       </section>
 
       {/* Section 5: Continue Reading */}
-      <section className="py-24 bg-white">
+      <section className="py-10 lg:py-24 bg-white">
         <div className="container mx-auto px-6 max-w-7xl">
           <FadeIn>
             <h2 className="text-4xl font-heading font-bold text-secondary mb-12 text-center">Continue Reading</h2>
