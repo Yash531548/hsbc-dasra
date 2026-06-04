@@ -124,6 +124,10 @@
   --color-chart-4: hsl(var(--chart-4));
   --color-chart-5: hsl(var(--chart-5));
 
+  --color-chapter: #08C1E7;
+  --color-box: #FFE3ED;
+  --color-usp: #DBF5BF;
+
   --font-sans: 'Manrope', sans-serif;
   --font-heading: 'Elizeth', sans-serif;
   --font-accent: 'Machinen', sans-serif;
