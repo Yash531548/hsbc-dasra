@@ -1,7 +1,7 @@
 import { Layout } from "@/components/Layout";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Astroid } from "lucide-react";
 
 export default function ExecutiveSummary() {
   return (
@@ -46,32 +46,73 @@ export default function ExecutiveSummary() {
               research has an implicit focus on civil society. The role of the family, community, the state,
               and the market in ensuring disability inclusion has been explored in a limited manner. The
               study may also be biased by our role as a sector intermediary. </p>
-            <div className="grid md:grid-cols-3 gap-6 mb-16 text-center">
+            <div className="grid md:grid-cols-5 gap-0 mb-10 text-center">
               <div className="bg-usp p-6 rounded-2xl border border-border">
                 <div className="text-4xl font-heading font-bold text-black mb-2">23</div>
                 <div className="text-sm font-medium text-black">Semi-structured interviews</div>
               </div>
+              <div className="self-center text-6xl text-green-700">+</div>
               <div className="bg-usp p-6 rounded-2xl border border-border text-center">
                 <div className="text-4xl font-heading font-bold text-black mb-2">2</div>
                 <div className="text-sm font-medium text-black">Focus group discussions (FGDs)</div>
               </div>
+              <div className="self-center text-6xl text-green-700">+</div>
               <div className="bg-usp p-6 rounded-2xl border border-border text-center">
                 <div className="text-4xl font-heading font-bold text-black mb-2">109</div>
                 <div className="text-sm font-medium text-black">Diagnostic survey of nonprofits</div>
               </div>
             </div>
 
+            <p className="text-xl text-gray-700 leading-relaxed mb-10">This report draws on secondary research, 23 semi-structured interviews, two focus group
+              discussions (FGDs), and a diagnostic survey of 109 disability-focused nonprofits. The
+              findings are intended as a landscape diagnostic, with a focus on civil society action, rather
+              than a representative census. While the report surfaces patterns, tensions, and operating
+              realities across the ecosystem, we acknowledge the limitations. Furthermore, the
+              research has an implicit focus on civil society. The role of the family, community, the state,
+              and the market in ensuring disability inclusion has been explored in a limited manner. The
+              study may also be biased by our role as a sector intermediary. </p>
+
             <div className="space-y-16">
               <section>
-                <h2 className="text-2xl font-heading font-bold text-secondary mb-4 flex items-center gap-3">
-                  <span className="text-primary">1.</span> Disability Inclusion as a Structural Condition
+                <h2 className="text-2xl font-heading font-bold text-chHeading mb-4 flex items-center gap-3">
+                  <span className="text-background rounded-full bg-chHeading w-8 aspect-square flex item-center justify-center">1</span> Disability Inclusion as a Structural Condition
                 </h2>
-                <p className="text-gray-700 mb-4">Disability exclusion is not simply a failure of implementation. It is produced by how systems are designed, resourced, and held accountable.</p>
-                <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                  <li><strong>Across the lifecycle early gaps compound.</strong> 36% of schools are accessible. 55% have ramps.</li>
-                  <li><strong>Within systems, access is mediated.</strong> Less than 40% of PwD possess a UDID card.</li>
-                  <li><strong>Across social locations, exclusion intensifies.</strong> Labor force participation ~24%.</li>
-                </ul>
+                <p className="text-gray-700 mb-4 text-xl">Disability exclusion is not simply a failure of implementation. It is produced by how
+                  systems are designed, resourced, and held accountable. Most institutions continue to be
+                  built around a narrow idea of the “normal” user, learner, or worker. When bodies, minds, or
+                  communication styles fall outside this norm, exclusion is reproduced through inaccessible
+                  infrastructure, fragmented service delivery, weak enforcement, and limited data visibility.</p>
+                <h3 className="text-secondary text-xl font-heading font-bold mb-6 ">THREE DYNAMICS SHAPE HOW THIS EXCLUSION OPERATES:</h3>
+                <div className="space-y-5 text-gray-900 mb-4 ">
+                  <div className="text-xl">
+                    <div className="flex items-center gap-2 font-bold text-gray-900">
+                      <Astroid className="w-4 h-4 text-astroid   shrink-0" fill="#9196CD" />
+                      Across the lifecycle early gaps compound.
+                    </div>
+                    <p className="pl-6 mt-1">Although over 2.14 million children with special needs are enrolled in schools, only 36% of schools are accessible, and 55% have ramps with handrails. Early barriers translate into constrained outcomes in education, employment, and autonomy.</p>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+                    <div className="space-y-5 text-xl">
+                      {[
+                        { heading: "Within systems, access is mediated through processes that often exclude.", text: "Less than 40% of persons with disabilities possess a UDID card, despite its role as a gateway to entitlements." },
+                        { heading: "Across social locations, exclusion intensifies. ", text: "Labor force participation among persons with disabilities is around 24%, and significantly lower for women with disabilities, reflecting the  effects of caste, gender, geography, and poverty" },
+                      ].map((item, i) => (
+                        <div key={i}>
+                          <div className="flex items-center gap-2 font-bold text-gray-900 ">
+                            <Astroid className="w-4 h-4 text-astroid   shrink-0" fill="#9196CD" />
+                            {item.heading}
+                          </div>
+                          <p className="pl-6 mt-1">{item.text}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <img src="/executive/10.png" alt="lifecycle" className="w-auto object-contain" />
+                  </div>
+                </div>
+
+                <p className="leading-relaxed text-xl ">The result is a persistent misalignment: rights exist, but systems remain underprepared to deliver them.</p>
+
+
               </section>
 
               <section>
