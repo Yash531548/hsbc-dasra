@@ -47,19 +47,19 @@ export default function ExecutiveSummary() {
               and the market in ensuring disability inclusion has been explored in a limited manner. The
               study may also be biased by our role as a sector intermediary. </p>
             <div className="grid md:grid-cols-5 gap-0 mb-10 text-center">
-              <div className="bg-usp p-6 rounded-2xl border border-border">
-                <div className="text-4xl font-heading font-bold text-black mb-2">23</div>
-                <div className="text-sm font-medium text-black">Semi-structured interviews</div>
+              <div className="bg-usp p-4 md:p-6 rounded-2xl border border-border">
+                <div className="text-2xl md:text-4xl font-heading font-bold text-black mb-2">23</div>
+                <div className="text-xs md:text-sm font-medium text-black">Semi-structured interviews</div>
               </div>
-              <div className="self-center text-6xl text-green-700">+</div>
-              <div className="bg-usp p-6 rounded-2xl border border-border text-center">
-                <div className="text-4xl font-heading font-bold text-black mb-2">2</div>
-                <div className="text-sm font-medium text-black">Focus group discussions (FGDs)</div>
+              <div className="self-center text-3xl md:text-6xl text-green-700">+</div>
+              <div className="bg-usp p-4 md:p-6 rounded-2xl border border-border text-center">
+                <div className="text-2xl md:text-4xl font-heading font-bold text-black mb-2">2</div>
+                <div className="text-xs md:text-sm font-medium text-black">Focus group discussions (FGDs)</div>
               </div>
-              <div className="self-center text-6xl text-green-700">+</div>
-              <div className="bg-usp p-6 rounded-2xl border border-border text-center">
-                <div className="text-4xl font-heading font-bold text-black mb-2">109</div>
-                <div className="text-sm font-medium text-black">Diagnostic survey of nonprofits</div>
+              <div className="self-center text-3xl md:text-6xl text-green-700">+</div>
+              <div className="bg-usp p-4 md:p-6 rounded-2xl border border-border text-center">
+                <div className="text-2xl md:text-4xl font-heading font-bold text-black mb-2">109</div>
+                <div className="text-xs md:text-sm font-medium text-black">Diagnostic survey of nonprofits</div>
               </div>
             </div>
 
@@ -230,13 +230,13 @@ export default function ExecutiveSummary() {
                   recommendations; they are shared conditions for action across government, philanthropy,
                   industry, and civil society.</p>
 
-                <div className="overflow-x-auto  border border-border mb-6">
-                  <table className="w-full text-sm border-collapse">
+                <div className="overflow-x-auto border border-border mb-6">
+                  <table className="w-full text-xs md:text-sm border-collapse">
                     <thead>
                       <tr className="bg-secondary text-white">
-                        <th className="text-left px-5 py-4 font-bold w-1/4 border-r border-white/20">Cornerstones</th>
-                        <th className="text-left px-5 py-4 font-bold w-[37.5%] border-r border-white/20">System Shift Required</th>
-                        <th className="text-left px-5 py-4 font-bold w-[37.5%]">What it Unlocks</th>
+                        <th className="text-left px-3 md:px-5 py-3 md:py-4 font-bold w-1/4 border-r border-white/20">Cornerstones</th>
+                        <th className="text-left px-3 md:px-5 py-3 md:py-4 font-bold w-[37.5%] border-r border-white/20">System Shift Required</th>
+                        <th className="text-left px-3 md:px-5 py-3 md:py-4 font-bold w-[37.5%]">What it Unlocks</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -268,9 +268,9 @@ export default function ExecutiveSummary() {
                         },
                       ].map((row, i) => (
                         <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-muted"}>
-                          <td className="px-5 py-4 font-bold text-gray-900 border-r border-border align-top bg-[#F7FAF1] border-b">{row.cornerstone}</td>
-                          <td className="px-5 py-4 text-gray-800 border-r border-border align-top">{row.shift}</td>
-                          <td className="px-5 py-4 text-gray-800 align-top">{row.unlocks}</td>
+                          <td className="px-3 md:px-5 py-3 md:py-4 font-bold text-gray-900 border-r border-border align-top bg-[#F7FAF1] border-b">{row.cornerstone}</td>
+                          <td className="px-3 md:px-5 py-3 md:py-4 text-gray-800 border-r border-border align-top">{row.shift}</td>
+                          <td className="px-3 md:px-5 py-3 md:py-4 text-gray-800 align-top">{row.unlocks}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -280,7 +280,7 @@ export default function ExecutiveSummary() {
                   formal recognition and services, to institutional pathways for inclusion, to systems
                   integration and field leadership.</p>
                 {/* point */}
-                <div className="space-y-6 text-xl mb-6">
+                <div className="space-y-6 text-base md:text-xl mb-6">
                   {[
                     {
                       heading: "Horizon 1: Access",
@@ -303,8 +303,8 @@ export default function ExecutiveSummary() {
                         <Astroid className="w-4 h-4 shrink-0" fill="#9196CD" stroke="#9196CD" />
                         {item.heading}
                       </div>
-                      <p className="pl-6 mt-1"><span className="font-bold">Core question:</span> {item.question}</p>
-                      <p className="pl-6 mt-1"><span className="font-bold">What to build:</span> {item.build}</p>
+                      <p className="pl-4 md:pl-6 mt-1"><span className="font-bold">Core question:</span> {item.question}</p>
+                      <p className="pl-4 md:pl-6 mt-1"><span className="font-bold">What to build:</span> {item.build}</p>
                     </div>
                   ))}
                 </div>
