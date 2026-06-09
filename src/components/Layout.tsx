@@ -116,7 +116,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       )}
 
       {/* Chapter Nav */}
-      {isChapterPage && (
+      {/* {isChapterPage && (
         <div className="chapter-nav sticky top-[72px] lg:top-[88px] z-40 bg-muted/80 backdrop-blur-md border-b border-border py-3">
           <div className="container mx-auto px-6 max-w-7xl flex items-center justify-center lg:justify-start gap-4 lg:gap-8 overflow-x-auto no-scrollbar">
             {["1", "2", "3", "4", "5", "6"].map(num => (
@@ -130,7 +130,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             ))}
           </div>
         </div>
-      )}
+      )} */}
 
       <main className="flex-1 flex flex-col">
         {children}
