@@ -66,7 +66,10 @@ export default function Chapter2() {
               </p>
 
               {/* 2.1.1 */}
-              <h4 className="text-2xl font-heading font-bold text-primary mb-8">2.1.1 Institutional Age and Maturity: A Sector Built Over Time</h4>
+              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+                <span className="pb-0 shrink-0">2.1.1</span>
+                <span>Institutional Age and Maturity: A Sector Built Over Time</span>
+              </h3>
 
               <div className="p-8 bg-box rounded-xl mb-8">
                 <p className="text-2xl font-heading font-regular text-black">
@@ -113,7 +116,10 @@ export default function Chapter2() {
               </p>
 
               {/* 2.1.2 */}
-              <h4 className="text-2xl font-heading font-bold text-primary mb-8">2.1.2 Budget Profile and Organizational Scale: The Mid-Sized Majority </h4>
+              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+                <span className="pb-0 shrink-0">2.1.2</span>
+                <span>Budget Profile and Organizational Scale: The Mid-Sized Majority</span>
+              </h3>
               <p className="text-gray-700 mb-12 leading-relaxed">
                 Nearly half of all organizations in our sample (48%) operated with annual budgets
                 below INR 3 Crore. The largest concentration (30%) sat in the INR 1–3 Crore band.
@@ -169,7 +175,10 @@ export default function Chapter2() {
 
           {/* 2.1.3 */}
           <section>
-            <h4 className="text-2xl font-heading font-bold text-primary mb-8">2.1.3 Geographic Spread and Depth of Presence: Local Reach, Uneven Visibility</h4>
+            <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <span className="pb-0 shrink-0">2.1.3</span>
+              <span>Geographic Spread and Depth of Presence: Local Reach, Uneven Visibility</span>
+            </h3>
             <p className="text-gray-700 text-xl leading-relaxed mb-8">
               Approximately 64% of organizations in our sample reported working at the state or regional level. While 40% operated at the district or city level, national-scale work had a slightly smaller share at 38%. Critically, only 18% reached hyperlocal areas like villages, blocks, and urban clusters.
             </p>
@@ -186,7 +195,10 @@ export default function Chapter2() {
 
           {/* 2.1.4 */}
           <section>
-            <h4 className="text-2xl font-heading font-bold text-primary mb-8">2.1.4 Leadership and Governance Composition: Representation and Decision-Making</h4>
+            <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <span className="pb-0 shrink-0">2.1.4</span>
+              <span>Leadership and Governance Composition: Representation and Decision-Making</span>
+            </h3>
             <p className="text-black text-xl leading-relaxed mb-1 underline font-bold">Figure: 4</p>
             <p className="text-black text-xl leading-relaxed mb-6 font-bold">Leadership and governance structure of nonprofits</p>
             <img src="/ch2/ch2Fig4.png" alt="Leadership and governance structure of nonprofits" className="w-full object-contain mb-4" />
@@ -212,7 +224,10 @@ export default function Chapter2() {
             </p>
 
             {/* 2.2.1 */}
-            <h4 className="text-2xl font-heading font-bold text-primary mb-8">2.2.1 Program Concentration: Education and Livelihoods as Dominant Sites</h4>
+            <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <span className="pb-0 shrink-0">2.2.1</span>
+              <span>Program Concentration: Education and Livelihoods as Dominant Sites</span>
+            </h3>
             <p className="text-gray-700 text-xl leading-relaxed mb-8">
               Four primary areas of work accounted for the majority of organizational activity across the sector – education (63%), livelihoods (48%), early intervention (42%), and healthcare, rehabilitation and therapy (40%).
             </p>
@@ -227,7 +242,10 @@ export default function Chapter2() {
             </p>
 
             {/* 2.2.2 */}
-            <h4 className="text-2xl font-heading font-bold text-primary mb-8">2.2.2 Disability Coverage: Cross-Disability Practice and Persistent Gaps</h4>
+            <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <span className="pb-0 shrink-0">2.2.2</span>
+              <span>Disability Coverage: Cross-Disability Practice and Persistent Gaps</span>
+            </h3>
             <p className="text-black text-xl leading-relaxed mb-1 underline font-bold">Table 3</p>
             <p className="text-black text-xl leading-relaxed mb-6 font-bold">Nonprofits by disability group focus, n=109</p>
             <div className="overflow-x-auto border border-border mb-4">
@@ -268,7 +286,10 @@ export default function Chapter2() {
             </p>
 
             {/* 2.2.3 */}
-            <h4 className="text-2xl font-heading font-bold text-primary mb-8">2.2.3 Intersectional Priorities: Who Is Reached and Who Remains Peripheral</h4>
+            <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <span className="pb-0 shrink-0">2.2.3</span>
+              <span>Intersectional Priorities: Who Is Reached and Who Remains Peripheral</span>
+            </h3>
             <p className="text-black text-xl leading-relaxed mb-1 underline font-bold">Table 4</p>
             <p className="text-black text-xl leading-relaxed mb-6 font-bold">Nonprofits by identity/population focus, n=109</p>
             <div className="overflow-x-auto border border-border mb-4">
@@ -319,7 +340,10 @@ export default function Chapter2() {
 
           {/* 2.2.4 */}
           <section>
-            <h4 className="text-2xl font-heading font-bold text-primary mb-8">2.2.4 Program Distribution: What Gets Funded and What Gets Deferred</h4>
+            <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <span className="pb-0 shrink-0">2.2.4</span>
+              <span>Program Distribution: What Gets Funded and What Gets Deferred</span>
+            </h3>
 
             <div className="p-8 bg-box rounded-xl mb-10">
               <p className="text-2xl font-heading font-regular text-black">
@@ -451,7 +475,10 @@ export default function Chapter2() {
             </p>
 
             {/* 2.3.1 */}
-            <h4 className="text-2xl font-heading font-bold text-primary mb-8">2.3.1 Multifunctionality as Practice: Beyond Service Delivery Alone</h4>
+            <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <span className="pb-0 shrink-0">2.3.1</span>
+              <span>Multifunctionality as Practice: Beyond Service Delivery Alone</span>
+            </h3>
             <p className="text-gray-700 text-xl leading-relaxed mb-10">
               Ask any disability nonprofit what they do, and the answer can seem like a list — early intervention and special education, then rehabilitation, then livelihood support, sometimes legal documentation, sometimes caregiver counselling, sometimes emergency response.
             </p>
@@ -469,11 +496,14 @@ export default function Chapter2() {
             </p>
 
             {/* 2.3.2 */}
-            <h4 className="text-2xl font-heading font-bold text-primary mb-8">2.3.2 Proximity and Identity: How Location Shapes Organizational Role</h4>
+            <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <span className="pb-0 shrink-0">2.3.2</span>
+              <span>Proximity and Identity: How Location Shapes Organizational Role</span>
+            </h3>
             <p className="text-gray-700 text-xl leading-relaxed mb-10">
               Where an organization sits in the ecosystem shapes how it understands its own purpose. Organizations embedded closely in community contexts — working daily with individuals and families, often in geographies where services are sparse and distances are long — tend to understand their role through sustained, relational engagement with exclusion as people experience it. They describe their work as staying present where other actors enter and leave, navigating the space between what formally exists and what practically reaches the people who need it.
             </p>
-            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6 border-l-4 border-primary">
+            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6 ">
               "We have to engage closely with families, communities, service providers and front-line workers — going group by group, speaking with them, and building awareness on how they can access services and entitlements"
             </p>
             <p className="text-gray-500 text-base mb-10 pl-6">— Nargis Khatoon, Srijan Mahila Vikas Manch</p>
@@ -482,8 +512,11 @@ export default function Chapter2() {
             </p>
 
             {/* 2.3.3 */}
-            <h4 className="text-2xl font-heading font-bold text-primary mb-8">2.3.3 Partial Intervention: Seeing the Full System While Acting in Parts</h4>
-            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6 border-l-4 border-primary">
+            <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <span className="pb-0 shrink-0">2.3.3</span>
+              <span>Partial Intervention: Seeing the Full System While Acting in Parts</span>
+            </h3>
+            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6">
               "We understand the system... but we can only intervene in parts of it. The rest, we really just try to work around"
             </p>
             <p className="text-gray-500 text-base mb-10 pl-6">— Nonprofit Practitioner</p>
@@ -535,15 +568,18 @@ export default function Chapter2() {
             </p>
 
             {/* 2.4.1 */}
-            <h4 className="text-2xl font-heading font-bold text-primary mb-8">2.4.1 Expansion Across Domains: Work That Extends Beyond Mandate</h4>
+            <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <span className="pb-0 shrink-0">2.4.1</span>
+              <span>Expansion Across Domains: Work That Extends Beyond Mandate</span>
+            </h3>
             <p className="text-gray-700 text-xl leading-relaxed mb-10">
               The expansion of nonprofit roles is not limited to taking on multiple functions within a defined scope. In many cases, organizations move across entirely different domains of work and across contexts, where system boundaries do not hold.
             </p>
-            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6 border-l-4 border-primary">
+            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6">
               "While our understanding was always that we work in mental health rather than disability, this natural progression led us to engage in disability-related work over time"
             </p>
             <p className="text-gray-500 text-base mb-8 pl-6">— Disket Angmo, Mann Talks</p>
-            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6 border-l-4 border-primary">
+            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6 ">
               "We don't come from the food and beverage sector... so we spent time studying it first, built a curriculum for people with disabilities"
             </p>
             <p className="text-gray-500 text-base mb-8 pl-6">— Beverly Louis, Mann</p>
@@ -553,7 +589,7 @@ export default function Chapter2() {
             <p className="text-gray-700 text-xl leading-relaxed mb-10">
               In some instances, this movement becomes more pronounced, with organizations stepping into functions typically associated with the state or specialized institutions — functions well beyond their original positioning, and that they are often neither trained nor resourced for durability.
             </p>
-            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6 border-l-4 border-primary">
+            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6 ">
               "The government hospitals would refer those complicated cases to private NGOs like us... the government facilities themselves are not capable enough of doing those surgeries"
             </p>
             <p className="text-gray-500 text-base mb-8 pl-6">— Subhojit Goswami, The Leprosy Mission Trust India</p>
@@ -565,22 +601,25 @@ export default function Chapter2() {
             </p>
 
             {/* 2.4.2 */}
-            <h4 className="text-2xl font-heading font-bold text-primary mb-8">2.4.2 Responsibility Without Formal Recognition: Work That Settles Informally</h4>
+            <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <span className="pb-0 shrink-0">2.4.2</span>
+              <span>Responsibility Without Formal Recognition: Work That Settles Informally</span>
+            </h3>
             <p className="text-gray-700 text-xl leading-relaxed mb-10">
               Alongside domain expansion, there is a quieter but equally consistent shift in how responsibility is distributed. Rather than being clearly assigned, it settles with the actors closest to the point of need — regardless of whether those actors are formally mandated to hold it, resourced to sustain it, or even aware the transfer has occurred until it is already complete.
             </p>
-            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6 border-l-4 border-primary">
+            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6">
               "The NGO's role is very practical, right from filing forms of the government... even accompanying beneficiaries to the offices"
             </p>
             <p className="text-gray-500 text-base mb-8 pl-6">— Adv. Mrunmayee Rajabhau Jodh, Manav Vikas Foundation</p>
-            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6 border-l-4 border-primary">
+            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6">
               "When the... parents passed away... no one else is coming forward to look after both of them... currently they are living with us"
             </p>
             <p className="text-gray-500 text-base mb-8 pl-6">— Karthikeyan Ganesan, Sristi Foundation</p>
             <p className="text-gray-700 text-xl leading-relaxed mb-10">
               In both cases, the organization took responsibility by default through the absence of anyone else willing to assume it. Filing government forms is administrative work that public systems are supposed to hold. Long-term residential care is a function that specialized institutions are supposed to provide. In both instances, responsibility has migrated informally.
             </p>
-            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6 border-l-4 border-primary">
+            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6">
               "When we train an Anganwadi worker... then the Anganwadi worker is doing the work, over and above everything else"
             </p>
             <p className="text-gray-500 text-base mb-8 pl-6">— Nonprofit Practitioner</p>
@@ -589,11 +628,14 @@ export default function Chapter2() {
             </p>
 
             {/* 2.4.3 */}
-            <h4 className="text-2xl font-heading font-bold text-primary mb-8">2.4.3 Continuity Beyond Program Cycles: Presence Without Institutional Security</h4>
+            <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <span className="pb-0 shrink-0">2.4.3</span>
+              <span>Continuity Beyond Program Cycles: Presence Without Institutional Security</span>
+            </h3>
             <p className="text-gray-700 text-xl leading-relaxed mb-10">
               As roles expand and responsibilities accumulate, the nature of engagement itself begins to shift. What might begin as time-bound support — a skilling program, a rehabilitation intervention, a documentation drive — extends into long-term and often indefinite involvement, sustained by the organization rather than by any formal system.
             </p>
-            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6 border-l-4 border-primary">
+            <p className="text-gray-700 text-xl italic leading-relaxed mb-2 pl-6">
               "You can't help a disabled person get a job and then expect that they will be independent for the rest of their life. Sustaining an income-generation program requires us to provide long-term support, rather than providing results that can be measured over just one period of time"
             </p>
             <p className="text-gray-500 text-base mb-8 pl-6">— Adv. Mrunmayee Rajabhau Jodh, Manav Vikas Foundation</p>

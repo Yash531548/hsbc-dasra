@@ -178,7 +178,7 @@ export default function Chapter1() {
                 tracing how these layers came together.</p>
             </div>
             <div>
-              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-primary mb-10">
+              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
                 <span className=" pb-0 shrink-0">1.2.1</span>
                 <span>From Charity to Rights: The Long Shift in Disability Framing </span>
               </h3>
@@ -213,7 +213,7 @@ export default function Chapter1() {
 
             </div>
             <div>
-              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-primary mb-10">
+              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
                 <span className=" pb-0 shrink-0">1.2.2</span>
                 <span>International Anchors and Domestic Deepening:
                   How Rights Frameworks Expanded </span>
@@ -250,7 +250,7 @@ export default function Chapter1() {
 
 
             <div>
-              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-primary mb-10">
+              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
                 <span className=" pb-0 shrink-0">1.2.3</span>
                 <span>
                   Expansion Across Domains: How Disability Moved
@@ -309,7 +309,7 @@ export default function Chapter1() {
             </div>
 
             <div>
-              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-primary mb-10">
+              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
                 <span className=" pb-0 shrink-0">1.3.1</span>
                 <span>
                   Design Mismatch: Systems Built Around
@@ -331,7 +331,7 @@ export default function Chapter1() {
 
 
             <div>
-              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-primary mb-10">
+              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
                 <span className=" pb-0 shrink-0">1.3.2</span>
                 <span>
                   State Variation: Uneven Institutional Capacity
@@ -353,7 +353,7 @@ export default function Chapter1() {
             </div>
 
             <div>
-              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-primary mb-10">
+              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
                 <span className=" pb-0 shrink-0">1.3.3</span>
                 <span>
                   Shared Stakes: Building Coordination Across
@@ -421,7 +421,7 @@ export default function Chapter1() {
 
 
             <div>
-              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-primary mb-10">
+              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
                 <span className=" pb-0 shrink-0">1.4.1</span>
                 <span>
                   The Domains of Inclusion: Where Participation
