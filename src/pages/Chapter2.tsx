@@ -4,26 +4,7 @@ import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, CartesianGrid } from "recharts";
 
-const geographicalData = [
-  { name: 'State/Regional', value: 64 },
-  { name: 'District/City', value: 40 },
-  { name: 'Nationally', value: 38 },
-  { name: 'Hyperlocal', value: 18 },
-];
 
-const budgetData = [
-  { name: 'Under 50L', value: 15 },
-  { name: '50L-1Cr', value: 18 },
-  { name: '1-3Cr', value: 31 },
-  { name: 'Over 50Cr', value: 2 },
-];
-
-const boardData = [
-  { name: 'Representation', value: 36 },
-  { name: 'No Representation', value: 64 },
-];
-
-const COLORS = ['#F26621', '#292563', '#94A3B8', '#D1D5DB'];
 
 export default function Chapter2() {
   return (
