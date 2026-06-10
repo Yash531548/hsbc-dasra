@@ -9,8 +9,8 @@ export default function Chapter4() {
       <div className="py-20 bg-chHero">
         <div className="container mx-auto px-6 max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="text-7xl font-heading font-bold text-secondary leading-none mb-2">04</div>
-            <h1 className="text-4xl md:text-5xl font-heading font-bold text-secondary leading-tight uppercase tracking-wide">
+            <div className="text-7xl font-accent font-bold text-secondary leading-none mb-2">04</div>
+            <h1 className="text-4xl md:text-5xl font-accent text-secondary leading-tight uppercase tracking-wide">
               Strengthening the Ecosystem: Capital, Capacity, and the Conditions for Durable Action
             </h1>
           </motion.div>
@@ -91,7 +91,7 @@ export default function Chapter4() {
 
             <p className="text-lg leading-relaxed text-gray-900 mb-10">
               Source: Government of India, Ministry of Corporate Affairs, National CSR Portal <br />
-              (https://www.csr.gov.in/ )
+              <a href="https://www.csr.gov.in/content/csr/global/master/home/home.html" target="_blank" className="underline cursor-pointer">(https://www.csr.gov.in/ )</a>
             </p>
             <p className="text-xl leading-relaxed text-gray-900 mb-10">
               Still, in India CSR remains one of the largest and most visible channels of domestic
@@ -178,7 +178,7 @@ export default function Chapter4() {
                 FY 2026-27 sees the sharpest rise — +INR 395 Cr year-on-year — driven largely by two new schemes: Divyangjan Kaushal Yojana (INR 200 Cr) and Divyang Sahara Yojana (INR 100 Cr), which together account for 79% of the increase.
               </p>
             </div>
-            <p className="text-sm text-gray-800 mb-12">Source: Government of India – Budget Documents <a href="https://www.indiabudget.gov.in/" target="_blank">(https://www.indiabudget.gov.in)</a></p>
+            <p className="text-sm text-gray-800 mb-12">Source: Government of India – Budget Documents <a href="https://www.indiabudget.gov.in/" target="_blank" className="underline cursor-pointer">(https://www.indiabudget.gov.in)</a></p>
 
             <p className="text-xl leading-relaxed text-gray-700 mb-8">
               The FY 2026–27 allocation of INR 1,670 crore represents a significant nominal increase, approximately 30% over revised estimates for 2025–26. However, two new schemes account for the bulk of this rise: the Divyangjan Kaushal Yojana (INR 200 crore, focused on industry-aligned skill development) and the Divyang Sahara Yojana (INR 100 crore, for assistive devices). Together, these two new schemes make up around 79% of the year-on-year increase, while funding for existing institutional and administrative programs has grown only marginally. A lack of up-to-date estimates of disability prevalence makes it challenging to map how DEPwD budget allocations sit alongside coverage requirements.
@@ -225,7 +225,7 @@ export default function Chapter4() {
             <img src="/ch4/ch4Fig11.png" alt="Figure – Underfunded work areas" className="w-full object-contain mb-10" />
 
             <p className="text-xl leading-relaxed text-gray-700 mb-12">
-              This pattern illustrates how thinner areas can be harder to articulate and stabilize within prevailing funding logics. Education, therapy, and skilling can be structured as programs with clear outputs. Caregiver support, legal navigation, accessibility, research, and advocacy sit closer to the enabling edge of the ecosystem. They make interventions usable and durable, but do not always present themselves as discrete programs. As Prashant Sude from GSP India Grameen Shramik Pratishthan shared, <em>"Skill development, distribution of assistive aids, and to an extent education are favored interventions, but there is a lot of scope to go beyond this that is difficult to explain to funders."</em> The thinness of interventions is not evenly distributed – it follows visibility and resource flows.
+              This pattern illustrates how thinner areas can be harder to articulate and stabilize within prevailing funding logics. Education, therapy, and skilling can be structured as programs with clear outputs. Caregiver support, legal navigation, accessibility, research, and advocacy sit closer to the enabling edge of the ecosystem. They make interventions usable and durable, but do not always present themselves as discrete programs. As Prashant Sude from GSP India Grameen Shramik Pratishthan shared, <em className="text-secondary font-medium">"Skill development, distribution of assistive aids, and to an extent education are favored interventions, but there is a lot of scope to go beyond this that is difficult to explain to funders."</em> The thinness of interventions is not evenly distributed – it follows visibility and resource flows.
             </p>
 
             {/* THE THINNER EDGE */}
@@ -240,33 +240,35 @@ export default function Chapter4() {
             </p>
 
             <p className="text-xl leading-relaxed text-gray-700 mb-12">
-              Funding selectivity also shapes which disabilities are more readily recognized. Radhika Kannan from Mariwala Health Initiative observed, <em>"Three to maybe six disabilities are funded the most by all CSRs, out of all the 21 specified in the RPwD Act. The other 14 to 15 are lesser-known and often underfunded."</em> The consequences of this selectivity shape what becomes familiar to capital, what is left at the margins of funder attention, and which organizations end up operating in more complexity than funding structures are designed to absorb.
+              Funding selectivity also shapes which disabilities are more readily recognized. Radhika Kannan from Mariwala Health Initiative observed, <em className="text-secondary font-medium">"Three to maybe six disabilities are funded the most by all CSRs, out of all the 21 specified in the RPwD Act. The other 14 to 15 are lesser-known and often underfunded."</em> The consequences of this selectivity shape what becomes familiar to capital, what is left at the margins of funder attention, and which organizations end up operating in more complexity than funding structures are designed to absorb.
             </p>
 
             {/* THE CONNECTIVE LAYER */}
             <p className="text-xl font-bold text-secondary uppercase tracking-wide mb-6">The Connective Layer: Functions That Sustain the Ecosystem</p>
 
             <p className="text-xl leading-relaxed text-gray-700 mb-8">
-              Funding also struggles to support the connective work around delivery with consistency. The survey shows this clearly. Around 52% of organizations shared that funding and reporting requirements make collaboration hard, while 51% cited limited staff time for partnerships and 42% said identifying the right partners was a challenge in itself. Coordination across organizations was difficult for 33%, and 28% reported that partnerships do not move beyond discussion into joint action.
-            </p>
-
-            <p className="text-xl leading-relaxed text-gray-700 mb-8">
-              At the last mile, the work of holding continuity across interventions often depends on partnerships, shared information, referrals, follow up, and trust. Yet partnerships and coalition work were underfunded for 15% of organizations in our sample, MEL and data systems for 15%, and digital systems for 14%. These are often sidelined as backend functions. In practice, they are part of the infrastructure that allows people to move across a fragmented ecosystem without disappearing between one intervention and the next.
-            </p>
-
-            <blockquote className="border-l-4 border-primary pl-6 mb-10">
-              <p className="text-xl leading-relaxed text-gray-700 italic mb-2">
-                "As a CSR organization in disability space, we believe our role extends beyond funding established programs. We work alongside nonprofits as co-creation partners to design and pilot innovative solutions, transforming promising ideas into structured, evidence-based interventions. Successful pilots can then evolve into scalable and replicable models with the potential to create sustained, long-term impact. This approach reflects our belief that CSR should be collaborative rather than transactional, grounded in shared learning and a collective commitment to advancing inclusion and improving the lives of persons with disabilities."
-              </p>
-              <p className="text-base text-gray-500 italic">-Dr. Aman Preet Kaur, Bajaj Finserv</p>
-            </blockquote>
-
-            <p className="text-xl leading-relaxed text-gray-700 mb-10">
-              These perspectives from funding practice outline how what is required at the last mile often needs to be articulated a certain way to become fundable.
+              At the last mile, the work of holding continuity across interventions often depends
+              on partnerships, shared information, referrals, follow up, and trust. Yet partnerships
+              and coalition work were underfunded for 15% of organizations in our sample, MEL
+              and data systems for 15%, and digital systems for 14%. These are often sidelined
+              as backend functions. In practice, they are part of the infrastructure that allows
+              people to move across a fragmented ecosystem without disappearing between one
+              intervention and the next. <em className="text-secondary font-medium">“As a CSR organization in disability space, we believe our
+              role extends beyond funding established programs. We work alongside nonprofits
+              91
+              as co-creation partners to design and pilot innovative solutions, transforming
+              promising ideas into structured, evidence-based interventions. Successful pilots
+              can then evolve into scalable and replicable models with the potential to create
+              sustained, long-term impact. This approach reflects our belief that CSR should
+              be collaborative rather than transactional, grounded in shared learning and a
+              collective commitment to advancing inclusion and improving the lives of persons
+              with disabilities.”</em> shared Dr. Aman Preet Kaur from Bajaj Finserv. These perspectives
+              from funding practice outline how what is required at the last mile often needs to
+              be articulated a certain way to become fundable.
             </p>
 
             <div className="p-8 bg-box rounded-xl mb-12">
-              <p className="text-xl leading-relaxed text-gray-800">
+              <p className="text-xl leading-relaxed text-black font-medium">
                 Coordination across organizations was difficult for 33%, and 28% reported that partnerships do not move beyond discussion into joint action.
               </p>
             </div>
@@ -301,7 +303,7 @@ export default function Chapter4() {
               <span>What Organizations Are Asking For: Signals from the Field</span>
             </h3>
 
-            <blockquote className="border-l-4 border-primary pl-6 mb-10">
+            <blockquote className="pl-6 mb-10">
               <p className="text-xl leading-relaxed text-gray-700 italic mb-2">
                 "We didn't take a salary, we couldn't hire people, we were doing all of the roles"
               </p>
@@ -343,7 +345,7 @@ export default function Chapter4() {
             </div>
 
             <p className="text-xl leading-relaxed text-gray-700 mb-6">Several things are worth holding together from these results.</p>
-            <ol className="list-decimal list-inside space-y-4 mb-10 text-xl text-gray-700 leading-relaxed">
+            <ol className="list-decimal list-inside space-y-4 mb-10 text-xl text-gray-700 leading-relaxed marker:text-secondary marker:font-bold">
               <li><strong className="text-secondary font-bold">Fundraising</strong> moves from a third of immediate responses to near-universal agreement at 90%, signalling that the sector reads its funding challenge as structural and long-term rather than temporary.</li>
               <li><strong className="text-secondary font-bold">Collaboration and partnerships</strong> are registered as a priority for around 27% of organizations in the near term, but rise to 52% over the longer term. This is evidence of constraint.</li>
               <li><strong className="text-secondary font-bold">MEL, narratives, field coordination</strong>, the functions that are most absent from immediate priorities, but become a part of the longer term signal the need for field-building.</li>
@@ -487,7 +489,7 @@ export default function Chapter4() {
                 { bold: "Differentiated need met with uniform models", rest: " — the pressures facing a rural, founder-led organization under INR 1 crore are categorically different from those facing a mid-sized urban one; the funding architecture does not yet reflect this." },
               ].map((item, i) => (
                 <li key={i} className="flex gap-3 items-start">
-                    <Astroid className="w-4 h-4 text-astroid shrink-0 mt-2" fill="#9196CD" />
+                  <Astroid className="w-4 h-4 text-astroid shrink-0 mt-2" fill="#9196CD" />
                   <span><strong>{item.bold}</strong>{item.rest}</span>
                 </li>
               ))}
