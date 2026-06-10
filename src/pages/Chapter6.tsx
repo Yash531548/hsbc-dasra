@@ -5,104 +5,237 @@ import { ArrowLeft } from "lucide-react";
 
 const sectorExperts = [
   "Anjanaben Acharya, Ashirvad Viklang Trust Sayla",
-  "Archana Chandra, Jai Vakeel Foundation",
-  "Bashir Ahmad Lone, Voluntary Medicare Society (VMS)",
-  "Beverly Louis, Mann",
-  "Bhavana Mukherjee, ADAPT (formerly Spastics Society of India)",
-  "Bhumika Modh, Association of People with Disabilities (APD)",
-  "Birbal Prasad, Manav Vikas Jharkhand",
-  "D.P.K. Babu, Akshay Akruti",
-  "Disket Angmo, Mann Talks",
-  "Dr. Aman Preet Kaur, Bajaj Finserv",
-  "Dr. Anita Limaye, Ummeed Child Development Center",
-  "Dr. Dipti Gandhi, Muskan Foundation",
-  "Dr. Koyeli Sengupta, Ummeed Child Development Center",
-  "Dr. Lakshmi Narasimhan, Banyan Academy of Leadership in Mental Health",
-  "Dr. N.S. Senthil Kumar, Association of People with Disabilities (APD)",
-  "Dr. Nandini Ghosh, Institute of Development Studies (IDS), Kolkata",
-  "Dr. O. P. Kulhari, CULP - Centre for Unfolding Learning Potentials",
-  "Dr. Pratima Sasindran, Gramin Shramik Pratishthan (GSP)",
-  "Gazala Paul, Paul Hamlyn Foundation & Samerth Charitable Trust",
-  "Jo Chopra-McGowan, Latika",
-  "Karthikeyan Ganesan, Sristi Foundation",
   "Adv. Mrunmayee Rajabhau Jodh, Manav Vikas Foundation (MVF), Nagpur",
+
+  "Archana Chandra, Jai Vakeel Foundation",
   "Myroslava Tataryn, Disability Rights Fund (DRF)",
+
+  "Bashir Ahmad Lone, Voluntary Medicare Society (VMS)",
   "Nargis Khatoon, Srijan Mahila Vikas Manch",
+
+  "Beverly Louis, Mann",
   "Neha Soneji, Tech Mahindra Foundation",
+
+  "Bhavana Mukherjee, ADAPT (formerly Spastics Society of India)",
   "Nidhi Goyal, Rising Flame",
+
+  "Bhumika Modh, Association of People with Disabilities (APD)",
   "Nipun Malhotra, Nipman Foundation & The Quantum Hub",
+
+  "Birbal Prasad, Manav Vikas Jharkhand",
   "Paul Ramanathan, SAMA Foundation",
+
+  "D.P.K. Babu, Akshay Akruti",
   "Payal Wadhwa, Jai Vakeel Foundation",
+
+  "Disket Angmo, Mann Talks",
   "Prashant Sude, GSP India Grameen Shramik Pratishthan",
+
+  "Dr. Aman Preet Kaur, Bajaj Finserv",
   "Prateek Madhav, AssisTech Foundation (ATF)",
+
+  "Dr. Anita Limaye, Ummeed Child Development Center",
   "R.A. Gopal, Global Trust",
+
+  "Dr. Dipti Gandhi, Muskan Foundation",
   "Radhika Kannan, Mariwala Health Initiative (MHI)",
+
+  "Dr. Koyeli Sengupta, Ummeed Child Development Center",
   "Richa Bhutani, Tata Institute of Social Sciences",
+
+  "Dr. Lakshmi Narasimhan, Banyan Academy of Leadership in Mental Health",
   "Shamin Mehrotra, Ummeed Child Development Center",
+
+  "Dr. N.S. Senthil Kumar, Association of People with Disabilities (APD)",
   "Shilpi Kapoor, BarrierBreak",
+
+  "Dr. Nandini Ghosh, Institute of Development Studies (IDS), Kolkata",
   "Siddharth Agarwal, Upadhyaya Foundation",
+
+  "Dr. O. P. Kulhari, CULP - Centre for Unfolding Learning Potentials",
   "Sonali Saini, Sol's ARC",
+
+  "Dr. Pratima Sasindran, Gramin Shramik Pratishthan (GSP)",
   "Srilakshmi Bellamkonda, Dr. Reddy's Foundation",
+
+  "Gazala Paul, Paul Hamlyn Foundation & Samerth Charitable Trust",
   "Sudeep Goyal, Asha Ka Jharna",
+
+  "Jo Chopra-McGowan, Latika",
   "Sushri Sangita Deo, Sadbhabana",
+
+  "Karthikeyan Ganesan, Sristi Foundation",
   "Subhojit Goswami, The Leprosy Mission Trust India",
+
+  "",
   "Usha V, Akshay Akruti",
 ];
 
 const surveyRespondents = [
-  "A Hand for Help Development Society", "Aaina", "Acc-Red",
-  "ACT2Enable Aadhaar Counselling and Therapy Council", "Action for Autism",
-  "Amar Seva Sangam", "Amhi Amchya Arogyasathi",
-  "Anushkaa Foundation for Eliminating Clubfoot", "Arj Foundation",
-  "ARVI TRUST", "Autism Welfare Trust", "AWMH Maharashtra",
-  "Bijapur Integrated Rural Development Society (BIRDS)", "Blink Foundation",
-  "Buzz Women", "Calcutta Blind School", "Centre for Community Initiative",
-  "Centre for Mental Health Law and Policy, Indian Law Society",
-  "Chehak Trust", "CORD", "Craftizen Foundation",
-  "CULP - Centre for Unfolding Learning Potentials",
-  "Dantan Manav Kalyan Kendra", "Darbar Sahitya Sansada",
-  "Diocese of Varanasi Social Welfare Society",
-  "Dr. Anjali Morris Education & Health Foundation",
-  "Ekalavya Educational And Charitable Trust", "EKTA", "Evoluer Solutions",
-  "Future Hope", "Ganpati Educational Society", "Geohazards Society",
-  "Global Trust for the Differently Abled", "Gramin Vikas Sansthan",
-  "Hind Yuva Shakti", "Jai Vakeel Foundation & Research Centre",
-  "Jan Vikas Samiti", "Jeevandeep Health Education and Charitable Trust",
-  "JYOTIRMAY NGO (Under the aegis of Lila K Jagtiani Foundation)",
-  "Kalp Samaj Sevi Sanstha", "Kandhamal Zilla Sabuja Vaidya Sangathan",
-  "Karnataka Hemophilia Society Davangere",
-  "Kaveri Counselling Empowerment & Gifted Centre",
-  "Kenduadihi Bikash Society", "Krida Vikas Sanstha (Slumsoccer)",
-  "Lohardaga Gram Swarajya Sansthjan", "Lok Kalyan Seva Kendra",
-  "Manav Vikas Foundation", "Mitra Jyothi",
-  "Movement for Alternatives and Youth Awareness", "Muskaan-PAEPID",
-  "Muskan Foundation", "National Association of the Deaf", "Navkshitij",
-  "NEAID", "Odisha Rising Foundation", "Prabhat Education Foundation",
-  "Pranjal Welfare Foundation", "Pratham Education Foundation", "Prerak",
-  "Prodigals' Home", "Rainbow Special Education and Rehabilitation Foundation",
-  "RampMyCity", "Raphael Ryder Cheshire International Centre",
-  "Rising Star Kilte Chehre", "SaaD", "Sadbhabana",
-  "Saheli HIV AIDS Karyakarta Sangh", "SAMA Foundation",
+  "A Hand for Help Development Society",
+  "NEAID",
+
+  "Aaina",
+  "Odisha Rising Foundation",
+
+  "Acc-Red",
+  "Prabhat Education Foundation",
+
+  "ACT2Enable Aadhaar Counselling and Therapy Council",
+  "Pranjal Welfare Foundation",
+
+  "Action for Autism",
+  "Pratham Education Foundation",
+
+  "Amar Seva Sangam",
+  "Prerak",
+
+  "Amhi Amchya Arogyasathi",
+  "Prodigals' Home",
+
+  "Anushkaa Foundation for Eliminating Clubfoot",
+  "Rainbow Special Education and Rehabilitation Foundation",
+
+  "Arj Foundation",
+  "RampMyCity",
+
+  "ARVI TRUST",
+  "Raphael Ryder Cheshire International Centre",
+
+  "Autism Welfare Trust",
+  "Rising Star Kilte Chehre",
+
+  "AWMH Maharashtra",
+  "SaaD",
+
+  "Bijapur Integrated Rural Development Society (BIRDS)",
+  "Sadbhabana",
+
+  "Blink Foundation",
+  "Saheli HIV AIDS Karyakarta Sangh",
+
+  "Buzz Women",
+  "SAMA Foundation",
+
+  "Calcutta Blind School",
   "Samarthanam Trust for the Disabled",
+
+  "Centre for Community Initiative",
   "Samerth Talim Kendra Operated by Samerth Charitable Trust",
-  "Samhita", "Sanchar AROD", "Sangath", "Sankalp Sanskritik Samiti",
-  "Santhivardhana Ministries", "SARDS", "Satya Special School",
-  "Service Initiative for Voluntary Action Trust", "SEWA Punjab",
-  "Shanta Memorial Rehabilitation Centre", "Shikshit Yuva Sewa Simiti",
-  "Sisu Vikas Samiti", "Snehadhara Foundation",
+
+  "Centre for Mental Health Law and Policy, Indian Law Society",
+  "Samhita",
+
+  "Chehak Trust",
+  "Sanchar AROD",
+
+  "CORD",
+  "Sangath",
+
+  "Craftizen Foundation",
+  "Sankalp Sanskritik Samiti",
+
+  "CULP - Centre for Unfolding Learning Potentials",
+  "Santhivardhana Ministries",
+
+  "Dantan Manav Kalyan Kendra",
+  "SARDS",
+
+  "Darbar Sahitya Sansada",
+  "Satya Special School",
+
+  "Diocese of Varanasi Social Welfare Society",
+  "Service Initiative for Voluntary Action Trust",
+
+  "Dr. Anjali Morris Education & Health Foundation",
+  "SEWA Punjab",
+
+  "Ekalavya Educational And Charitable Trust",
+  "Shanta Memorial Rehabilitation Centre",
+
+  "EKTA",
+  "Shikshit Yuva Sewa Simiti",
+
+  "Evoluer Solutions",
+  "Sisu Vikas Samiti",
+
+  "Future Hope",
+  "Snehadhara Foundation",
+
+  "Ganpati Educational Society",
   "Sri Nrusingha Dev Anchalika Yuba Parisada (SNDAYP)",
-  "Srijan Mahila Vikash Manch", "Sristi Foundation", "Tamana",
-  "Team Vision Foundation", "The Association of People with Disability",
-  "The Banyan", "The Education Audiology and Research Society",
-  "The Leprosy Mission Trust India", "The Stephen High School for the Deaf",
-  "The Victoria Memorial School for the Blind", "Torchit", "Udayan Care",
-  "Udbhav Vision Foundation", "Ummeed Child Development Center",
-  "Umoya Sports", "UNNATI - Organisation for Development Education",
-  "V Can Autism Foundation", "Vidhi Centre for Legal Policy", "Vidyaranya",
+
+  "Geohazards Society",
+  "Srijan Mahila Vikash Manch",
+
+  "Global Trust for the Differently Abled",
+  "Sristi Foundation",
+
+  "Gramin Vikas Sansthan",
+  "Tamana",
+
+  "Hind Yuva Shakti",
+  "Team Vision Foundation",
+
+  "Jai Vakeel Foundation & Research Centre",
+  "The Association of People with Disability",
+
+  "Jan Vikas Samiti",
+  "The Banyan",
+
+  "Jeevandeep Health Education and Charitable Trust",
+  "The Education Audiology and Research Society",
+
+  "JYOTIRMAY NGO (Under the aegis of Lila K Jagtiani Foundation)",
+  "The Leprosy Mission Trust India",
+
+  "Kalp Samaj Sevi Sanstha",
+  "The Stephen High School for the Deaf",
+
+  "Kandhamal Zilla Sabuja Vaidya Sangathan",
+  "The Victoria Memorial School for the Blind",
+
+  "Karnataka Hemophilia Society Davangere",
+  "Torchit",
+
+  "Kaveri Counselling Empowerment & Gifted Centre",
+  "Udayan Care",
+
+  "Kenduadihi Bikash Society",
+  "Udbhav Vision Foundation",
+
+  "Krida Vikas Sanstha (Slumsoccer)",
+  "Ummeed Child Development Center",
+
+  "Lohardaga Gram Swarajya Sansthjan",
+  "Umoya Sports",
+
+  "Lok Kalyan Seva Kendra",
+  "UNNATI - Organisation for Development Education",
+
+  "Manav Vikas Foundation",
+  "V Can Autism Foundation",
+
+  "Mitra Jyothi",
+  "Vidhi Centre for Legal Policy",
+
+  "Movement for Alternatives and Youth Awareness",
+  "Vidyaranya",
+
+  "Muskaan-PAEPID",
   "Vipla Foundation (Save The Children India)",
+
+  "Muskan Foundation",
   "Vivekanand Lok Vikas Sansthan",
+
+  "National Association of the Deaf",
   "Voluntary Integration for Education and Welfare of Society (VIEWS)",
-  "Voluntary Medicare Society (VMS)", "Youth4Jobs Foundation",
+
+  "Navkshitij",
+  "Voluntary Medicare Society (VMS)",
+
+  "",
+  "Youth4Jobs Foundation",
 ];
 
 const references = [
@@ -286,7 +419,14 @@ export default function Chapter6() {
             <h3 className="text-2xl font-heading font-bold text-chHeading mb-8">List of Sector Experts and Practitioners (A-Z)</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-2">
               {sectorExperts.map((expert, i) => (
-                <p key={i} className="text-base text-gray-700 leading-relaxed">• {expert}</p>
+                // <p key={i} className="text-base text-gray-700 leading-relaxed">• {expert}</p>
+                <p
+                  key={i}
+                  className={`text-base text-gray-700 leading-relaxed ${expert ? "before:content-['•'] before:mr-2" : ""
+                    }`}
+                >
+                  {expert}
+                </p>
               ))}
             </div>
           </section>
@@ -296,7 +436,14 @@ export default function Chapter6() {
             <h3 className="text-2xl font-heading font-bold text-chHeading mb-8">List of Survey Respondents (A-Z)</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-2">
               {surveyRespondents.map((org, i) => (
-                <p key={i} className="text-base text-gray-700 leading-relaxed">• {org}</p>
+                // <p key={i} className="text-base text-gray-700 leading-relaxed">• {org}</p>
+                <p
+                  key={i}
+                  className={`text-base text-gray-700 leading-relaxed ${org ? "before:content-['•'] before:mr-2" : ""
+                    }`}
+                >
+                  {org}
+                </p>
               ))}
             </div>
           </section>
