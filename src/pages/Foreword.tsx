@@ -14,7 +14,7 @@ export default function Foreword() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="text-3xl font-heading font-bold text-chapter mb-2 uppercase tracking-wide">Foreword</h1>
-            <p className="text-lg text-secondary font-medium ">ALOKA MAJUMDAR, MD, Head of Sustainability, HSBC India</p>
+            <p className="text-lg text-secondary font-medium ">ALOKA MAJUMDAR,</p>
             <p className="text-lg text-black font-regular">MD, Head of Sustainability</p>
             <p className="text-lg text-black font-regular ">HSBC India</p>
             <div className="bg-secondary  w-full h-px my-1 mb-8" />

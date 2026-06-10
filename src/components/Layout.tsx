@@ -27,7 +27,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
     { label: "Chapter 04 – Strengthening the Ecosystem", href: "/chapter-4" },
     { label: "Chapter 05 – Cornerstones for Collaborative Action", href: "/chapter-5" },
     { label: "Chapter 06 – Time Horizons for Disability Inclusion", href: "/chapter-6" },
-    { label: "Resources", href: "/resources" },
+    // { label: "Resources", href: "/resources" },
   ];
 
   return (
@@ -74,8 +74,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
             </Link> */}
 
             <a
-              href="/pdf/report.pdf"
-              download
+              href="https://wordpress-1282246-6462636.cloudwaysapps.com/wp-content/uploads/2026/06/From-Promise-to-Practice-Tagged-PDF-1.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-full text-sm font-medium transition-all"
             >
               <Download className="w-4 h-4" /> Download PDF
@@ -105,8 +106,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
             ))}
             <Link href="/accessibility" onClick={() => setMobileMenuOpen(false)} className="py-3 text-lg font-medium text-secondary border-b border-border">Accessibility</Link>
             <a
-              href="/pdf/report.pdf"
-              download
+              href="https://wordpress-1282246-6462636.cloudwaysapps.com/wp-content/uploads/2026/06/From-Promise-to-Practice-Tagged-PDF-1.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 bg-primary text-white mt-6 py-3 rounded-full text-lg font-medium"
             >
               <Download className="w-5 h-5" /> Download PDF

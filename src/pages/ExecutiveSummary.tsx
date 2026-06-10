@@ -25,7 +25,7 @@ export default function ExecutiveSummary() {
 
             <div className="p-8 bg-box rounded-xl mb-12">
               <p className="text-2xl font-heading font-medium text-black ">
-                "Yet, for an estimated <br /><span className="font-extrabold text-3xl">40–90 million </span><br /> persons with disabilities, the distance between legal recognition and lived reality remains wide."
+                Yet, for an estimated <br /><span className="font-extrabold text-3xl">40–90 million </span><br /> persons with disabilities, the distance between legal recognition and lived reality remains wide.
               </p>
             </div>
 
@@ -99,8 +99,8 @@ export default function ExecutiveSummary() {
                         { heading: "Across social locations, exclusion intensifies. ", text: "Labor force participation among persons with disabilities is around 24%, and significantly lower for women with disabilities, reflecting the  effects of caste, gender, geography, and poverty" },
                       ].map((item, i) => (
                         <div key={i}>
-                          <div className="flex items-center gap-2 font-bold text-gray-900 ">
-                            <Astroid className="w-4 h-4 text-astroid   shrink-0" fill="#9196CD" />
+                          <div className="flex items-start  gap-2 font-bold text-gray-900 ">
+                            <Astroid className="w-4 h-4 text-astroid  mt-2 shrink-0" fill="#9196CD" />
                             {item.heading}
                           </div>
                           <p className="pl-6 mt-1">{item.text}</p>

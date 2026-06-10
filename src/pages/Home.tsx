@@ -50,7 +50,7 @@ export default function Home() {
       {/* Section 1: Hero */}
       <section className="relative bg-muted overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-muted to-white"></div>
-        <div className="container mx-auto px-6 max-w-7xl relative z-10 py-14 lg:py-32">
+        <div className="container mx-auto px-6 max-w-7xl relative z-10 py-14 ">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="max-w-2xl">
               <FadeIn>
@@ -70,7 +70,7 @@ export default function Home() {
               </FadeIn>
               <FadeIn delay={0.3}>
                 <div className="flex flex-wrap gap-4">
-                  <a href="/pdf/report.pdf" download className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow h-14 px-8 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 text-base">
+                  <a href="https://wordpress-1282246-6462636.cloudwaysapps.com/wp-content/uploads/2026/06/From-Promise-to-Practice-Tagged-PDF-1.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow h-14 px-8 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 text-base">
                     Download Report
                   </a>
                   {/* <Link href="/foreword" className=" inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-secondary text-secondary shadow-sm hover:bg-secondary hover:text-white h-14 px-8 rounded-full text-base">
@@ -210,7 +210,7 @@ export default function Home() {
                   Untrained in any formal institution, their artistry is driven purely by passion and instinct. Praised early on for distinctive handwriting and imaginative thinking, they discovered that true joy in art lies in expressing emotions rather than replicating visuals. For them, painting is not just a creative outlet, but a means of transformation — turning limitations into possibilities and imagination into impactful expression.
                 </p>
                 <p className="font-semibold text-white">
-                We also extend our sincere thanks to <a
+                  We also extend our sincere thanks to <a
                     href="https://atypicaladvantage.in/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -218,7 +218,7 @@ export default function Home() {
                   >Atypical Advantage</a> for their support in helping source and facilitate the artwork for the cover page of this report.
                 </p>
                 <p>
-                Discover more inspiring artwork by artists with disabilities at{" "}
+                  Discover more inspiring artwork by artists with disabilities at{" "}
                   <a
                     href="https://atypicaladvantage.in/atypical-art/arts"
                     target="_blank"
@@ -254,11 +254,13 @@ export default function Home() {
             ].map((card, i) => (
               <FadeIn key={i} delay={i * 0.1}>
                 <Link href={card.link} className="block group h-full bg-muted p-8 rounded-2xl border border-border hover:border-primary hover:-translate-y-1 transition-all duration-300">
-                  {card.num && <div className="text-primary font-heading font-bold text-xl mb-4">Chapter {card.num}</div>}
-                  {!card.num && <div className="text-secondary font-heading font-bold text-xl mb-4">Overview</div>}
-                  <h3 className="font-heading font-bold text-secondary text-lg mb-3">{card.title}</h3>
-                  <p className="text-gray-600 text-sm mb-6">{card.desc}</p>
-                  <ArrowRight className="w-5 h-5 text-primary group-hover:translate-x-2 transition-transform" />
+                  <div className="flex flex-col h-full">
+                    {card.num && <div className="text-primary font-heading font-bold text-xl mb-4">Chapter {card.num}</div>}
+                    {!card.num && <div className="text-secondary font-heading font-bold text-xl mb-4">Overview</div>}
+                    <h3 className="font-heading font-bold text-secondary text-lg mb-3">{card.title}</h3>
+                    <p className="text-gray-600 text-sm mb-6">{card.desc}</p>
+                    <ArrowRight className="w-5 h-5 text-primary mt-auto group-hover:translate-x-2 transition-transform" />
+                  </div>
                 </Link>
               </FadeIn>
             ))}
