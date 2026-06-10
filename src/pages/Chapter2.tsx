@@ -13,8 +13,8 @@ export default function Chapter2() {
       <div className="py-20 bg-chHero">
         <div className="container mx-auto px-6 max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="text-7xl font-heading font-bold text-secondary leading-none mb-2">02</div>
-            <h1 className="text-4xl md:text-5xl font-heading font-bold text-secondary leading-tight uppercase tracking-wide">
+            <div className="text-7xl font-accent font-bold text-secondary leading-none mb-2">02</div>
+            <h1 className="text-4xl md:text-5xl font-accent text-secondary leading-tight uppercase tracking-wide">
               The Nonprofit Landscape:<br />
               Roles, Reach, and Operating<br />
               Realities

@@ -54,7 +54,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="max-w-2xl">
               <FadeIn>
-                <h1 className="text-5xl lg:text-[64px] leading-[1.1] font-heading font-bold text-secondary mb-6">
+                <h1 className="text-5xl lg:text-[64px] leading-[1.1] font-accent font-bold text-secondary mb-6">
                   FROM PROMISE<br />TO PRACTICE
                 </h1>
               </FadeIn>
