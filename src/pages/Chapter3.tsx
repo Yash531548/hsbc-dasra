@@ -42,8 +42,8 @@ export default function Chapter3() {
       <div className="bg-secondary py-20 text-white text-center">
         <div className="container mx-auto px-6 max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="text-6xl md:text-8xl font-heading font-bold text-primary mb-6 opacity-90">03</div>
-            <h1 className="text-3xl md:text-5xl font-heading font-bold leading-tight">Where Inclusion Breaks: Breakpoints and Intervention Patterns</h1>
+            <div className="text-6xl md:text-8xl font-accent font-bold text-primary mb-6 opacity-90">03</div>
+            <h1 className="text-3xl md:text-5xl font-accent leading-tight">Where Inclusion Breaks: Breakpoints and Intervention Patterns</h1>
           </motion.div>
         </div>
       </div>
