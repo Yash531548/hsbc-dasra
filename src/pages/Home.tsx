@@ -50,7 +50,7 @@ export default function Home() {
       {/* Section 1: Hero */}
       <section className="relative bg-muted overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-muted to-white"></div>
-        <div className="container mx-auto px-6 max-w-7xl relative z-10 py-14 lg:py-32">
+        <div className="container mx-auto px-6 max-w-7xl relative z-10 py-14 ">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="max-w-2xl">
               <FadeIn>
