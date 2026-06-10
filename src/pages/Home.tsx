@@ -70,7 +70,7 @@ export default function Home() {
               </FadeIn>
               <FadeIn delay={0.3}>
                 <div className="flex flex-wrap gap-4">
-                  <a href="/pdf/report.pdf" download className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow h-14 px-8 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 text-base">
+                  <a href="https://wordpress-1282246-6462636.cloudwaysapps.com/wp-content/uploads/2026/06/From-Promise-to-Practice-Tagged-PDF-1.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 shadow h-14 px-8 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 text-base">
                     Download Report
                   </a>
                   {/* <Link href="/foreword" className=" inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-secondary text-secondary shadow-sm hover:bg-secondary hover:text-white h-14 px-8 rounded-full text-base">
