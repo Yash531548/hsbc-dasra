@@ -94,9 +94,9 @@ export default function Chapter6() {
             <Link href="/chapter-5" className="flex items-center gap-2 text-secondary hover:text-primary transition-colors font-medium">
               <ArrowLeft className="w-4 h-4" /> Chapter 05
             </Link>
-            <Link href="/resources" className="flex items-center gap-2 text-secondary hover:text-primary transition-colors font-medium">
+            {/* <Link href="/resources" className="flex items-center gap-2 text-secondary hover:text-primary transition-colors font-medium">
               Resources <ArrowRight className="w-4 h-4" />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

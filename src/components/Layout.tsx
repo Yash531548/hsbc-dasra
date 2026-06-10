@@ -27,7 +27,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
     { label: "Chapter 04 – Strengthening the Ecosystem", href: "/chapter-4" },
     { label: "Chapter 05 – Cornerstones for Collaborative Action", href: "/chapter-5" },
     { label: "Chapter 06 – Time Horizons for Disability Inclusion", href: "/chapter-6" },
-    { label: "Resources", href: "/resources" },
+    // { label: "Resources", href: "/resources" },
   ];
 
   return (
