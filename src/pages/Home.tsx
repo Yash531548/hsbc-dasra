@@ -54,17 +54,17 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="max-w-2xl">
               <FadeIn>
-                <h1 className="text-5xl lg:text-[64px] leading-[1.1] font-accent font-bold text-secondary mb-6">
+                <h1 className="text-4xl lg:text-[64px] leading-[1.1] font-accent font-bold text-secondary mb-6">
                   FROM PROMISE<br />TO PRACTICE
                 </h1>
               </FadeIn>
               <FadeIn delay={0.1}>
-                <p className="text-xl lg:text-2xl font-heading font-semibold text-primary mb-6">
+                <p className="text-lg lg:text-2xl font-heading font-semibold text-primary mb-6">
                   A Landscape Report on Disability Inclusion and Civil Society Action in India
                 </p>
               </FadeIn>
               <FadeIn delay={0.2}>
-                <p className="text-lg text-gray-600 mb-10 leading-relaxed">
+                <p className="text-base md:text-lg text-gray-600 mb-10 leading-relaxed">
                   Understanding disability inclusion across policy, philanthropy, civil society, and systems change.
                 </p>
               </FadeIn>
@@ -96,7 +96,7 @@ export default function Home() {
       <section className="py-10 lg:py-24 bg-white">
         <div className="container mx-auto px-6 max-w-7xl">
           <FadeIn>
-            <h2 className="text-4xl font-heading font-bold text-primary mb-3">About HSBC</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-3">About HSBC</h2>
             <div className="w-16 h-1 bg-primary rounded-full mb-12" />
           </FadeIn>
 
@@ -145,7 +145,7 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-16 items-center">
             <div className="">
               <FadeIn>
-                <h2 className="text-4xl font-heading font-bold text-secondary mb-3">About Dasra</h2>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold text-secondary mb-3">About Dasra</h2>
                 <div className="w-16 h-1 bg-secondary rounded-full mb-12" />
               </FadeIn>
               <div className="space-y-10">
@@ -188,8 +188,8 @@ export default function Home() {
             <div>
               <FadeIn>
                 <div className="text-primary font-heading font-bold tracking-widest uppercase mb-4 text-sm">About the Artwork</div>
-                <h2 className="text-4xl font-heading font-bold mb-8">Rolling Against Odds</h2>
-                <div className="space-y-6 text-lg text-white/80 mb-10 leading-relaxed">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-8">Rolling Against Odds</h2>
+                <div className="space-y-6 text-base md:text-lg text-white/80 mb-10 leading-relaxed">
                   <p>This painting portrays a girl with one artificial leg who embraces her disability with courage and pride. Balancing beautifully on skates, she transforms a challenge into a graceful expression of strength and resilience. She flaunts her difference, not as a weakness, but as a source of joy, confidence, and inspiration. Rolling Against Odds celebrates her journey of balance, inclusion, and unshakable determination — showing the world that nothing, not even disability, can stop her from living fully, freely, and beautifully.</p>
                 </div>
               </FadeIn>
@@ -198,10 +198,10 @@ export default function Home() {
           {/* About the Artist */}
           <FadeIn>
             <div className="mt-20 pt-16 border-t border-white/10">
-              <h2 className="text-4xl font-heading font-bold text-primary mb-10">About the Artist</h2>
-              <div className="space-y-6 text-lg text-white/80 leading-relaxed">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-10">About the Artist</h2>
+              <div className="space-y-6 text-base md:text-lg text-white/80 leading-relaxed">
                 <div>
-                  <h3 className="font-heading font-bold text-white text-xl mb-3">Shaily</h3>
+                  <h3 className="font-heading font-bold text-white text-lg md:text-xl mb-3">Shaily</h3>
                   <p>
                     An aspiring artist with a locomotor disability and an amputated right hand, Shaily paints solely with their left hand — a powerful testament to resilience and creativity. Art has been an inseparable part of their life since childhood. At the age of six, they began sketching deities from calendar images, instinctively seeing the world through a unique lens. While others painted the sun in shades of yellow and orange, they envisioned it in hues of white and blue.
                   </p>
@@ -239,7 +239,7 @@ export default function Home() {
       <section className="py-10 lg:py-24 bg-white">
         <div className="container mx-auto px-6 max-w-7xl">
           <FadeIn>
-            <h2 className="text-4xl font-heading font-bold text-secondary mb-12 text-center">Continue Reading</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-secondary mb-12 text-center">Continue Reading</h2>
           </FadeIn>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -255,9 +255,9 @@ export default function Home() {
               <FadeIn key={i} delay={i * 0.1}>
                 <Link href={card.link} className="block group h-full bg-muted p-8 rounded-2xl border border-border hover:border-primary hover:-translate-y-1 transition-all duration-300">
                   <div className="flex flex-col h-full">
-                    {card.num && <div className="text-primary font-heading font-bold text-xl mb-4">Chapter {card.num}</div>}
-                    {!card.num && <div className="text-secondary font-heading font-bold text-xl mb-4">Overview</div>}
-                    <h3 className="font-heading font-bold text-secondary text-lg mb-3">{card.title}</h3>
+                    {card.num && <div className="text-primary font-heading font-bold text-lg md:text-xl mb-4">Chapter {card.num}</div>}
+                    {!card.num && <div className="text-secondary font-heading font-bold text-lg md:text-xl mb-4">Overview</div>}
+                    <h3 className="font-heading font-bold text-secondary text-base md:text-lg mb-3">{card.title}</h3>
                     <p className="text-gray-600 text-sm mb-6">{card.desc}</p>
                     <ArrowRight className="w-5 h-5 text-primary mt-auto group-hover:translate-x-2 transition-transform" />
                   </div>
