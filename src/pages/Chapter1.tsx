@@ -10,8 +10,8 @@ export default function Chapter1() {
       <div className="py-20 bg-chHero" >
         <div className="container mx-auto px-6 max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="text-7xl font-accent font-bold text-secondary leading-none mb-2">01</div>
-            <h1 className="text-4xl md:text-5xl font-accent text-secondary leading-tight uppercase tracking-wide">
+            <div className="text-5xl md:text-7xl font-accent font-bold text-secondary leading-none mb-2">01</div>
+            <h1 className="text-3xl md:text-5xl font-accent text-secondary leading-tight uppercase tracking-wide">
               Mapping the Terrain:<br />
               How Disability Inclusion<br />
               is Structured in India
@@ -23,7 +23,7 @@ export default function Chapter1() {
       <div className="bg-white py-16 lg:py-24">
         <div className="container mx-auto px-6 max-w-4xl space-y-20">
           <section>
-            <p className="text-xl text-gray-700 leading-relaxed font-medium mb-10">
+            <p className="text-base md:text-lg text-black leading-relaxed font-medium mb-10">
               Every landscape is shaped twice: once by what
               exists on the ground, and once by what a society
               has learned to notice. Disability inclusion in India
@@ -35,7 +35,7 @@ export default function Chapter1() {
               of the machinery through which inclusion is
               enabled, delayed, negotiated, or denied.
             </p>
-            <p className="text-xl text-gray-700 leading-relaxed font-medium mb-10">This is the first clue that disability inclusion is
+            <p className="text-base md:text-lg text-black leading-relaxed font-medium mb-10">This is the first clue that disability inclusion is
               a systems question. It is located only in law,
               service delivery, or individual experience, and
               in the relationship between them: how people
@@ -43,7 +43,7 @@ export default function Chapter1() {
               available, and how responsibility is distributed
               when systems do not align.</p>
 
-            <p className="text-xl text-gray-700 leading-relaxed font-medium mb-10">
+            <p className="text-base md:text-lg text-black leading-relaxed font-medium mb-10">
               Scale is one of the first places where this relationship becomes visible. Globally,
               the World Health Organization estimates that 1.3 billion people, or around 16% of
               the world’s population, experience significant disability. In India, official estimates
@@ -51,12 +51,12 @@ export default function Chapter1() {
               2.21% of the population, and the NSS 76th Round estimated disability prevalence at
               2.2%. These differences shape who is counted, who can claim support, and whose
               needs are planned for. Measurement, in this sense, helps define the boundaries of
-              public responsibility
+              public responsibility.
             </p>
 
             <div className="p-8 bg-box rounded-xl mb-12">
-              <p className="text-2xl font-heading font-regular text-black ">
-                <span className="font-bold text-3xl">In India,</span><br /> official estimates remain much
+              <p className="text-xl md:text-2xl font-heading font-regular text-black ">
+                <span className="font-bold text-2xl md:text-3xl">In India,</span><br /> official estimates remain much
                 lower: Census 2011 recorded 2.68
                 crore persons with disabilities, or
                 2.21% of the population, and the NSS
@@ -65,7 +65,7 @@ export default function Chapter1() {
               </p>
             </div>
 
-            <p className="text-gray-700 leading-relaxed text-xl font-medium mb-10">
+            <p className="text-black leading-relaxed text-base md:text-lg font-medium mb-10">
               The formal architecture of disability inclusion has also changed over the past
               decade. The Rights of Persons with Disabilities Act, 2016 expanded recognized
               disability categories, introduced reasonable accommodation, and placed clearer
@@ -74,7 +74,7 @@ export default function Chapter1() {
               question of access, dignity, and public responsibility rather than charity, discretion,
               or individual adjustment.
             </p>
-            <p className="text-gray-700 leading-relaxed text-xl font-medium mb-10">
+            <p className="text-black leading-relaxed text-base md:text-lg font-medium mb-10">
               These shifts matter because they alter the terms on which persons with
               disabilities can make claims, and the terms on which institutions can be held
               to account. Yet access is still shaped through many ordinary points of contact:
@@ -86,11 +86,11 @@ export default function Chapter1() {
               disabilities as ordinary users, learners, workers, and citizens.
             </p>
 
-            <p className="text-gray-900 leading-relaxed text-xl font-bold mb-6">This is where the everyday design of institutions becomes visible.</p>
+            <p className="text-gray-900 leading-relaxed text-base md:text-lg font-bold mb-6">This is where the everyday design of institutions becomes visible.</p>
             <img src="/ch1/text.png" alt="text" className="w-auto object-contain mb-10" />
-            <p className="text-gray-700 leading-relaxed text-xl font-regular mb-10">When these assumptions do not match people’s lives, the work of access shifts
+            <p className="text-black leading-relaxed text-base md:text-lg font-regular mb-10">When these assumptions do not match people’s lives, the work of access shifts
               onto persons with disabilities and those closest to them.</p>
-            <p className="leading-relaxed text-secondary mb-10 text-xl">Families compensate for inaccessible services. Women and girls carry
+            <p className="leading-relaxed text-secondary mb-10 text-base md:text-lg">Families compensate for inaccessible services. Women and girls carry
               disproportionate unpaid care. Persons with disabilities living at the
               intersections of poverty, caste, gender, rurality, and age face additional
               barriers to recognition and support that compound in ways most schemes
@@ -98,7 +98,7 @@ export default function Chapter1() {
               service providers, but as translators, navigators, advocates, trust-builders,
               and holders of continuity across fragmented systems. </p>
 
-            <p className="text-xl text-gray-700 font-regular leading-relaxed mb-10">
+            <p className="text-base md:text-lg text-black font-regular leading-relaxed mb-10">
               This is why disability inclusion is a structural question. It asks how access is
               designed, who carries the burden of navigation, what forms of support are treated
               as essential, and why disabled lives are still so often required to justify their claim
@@ -108,14 +108,14 @@ export default function Chapter1() {
               name of the public are prepared to serve the full diversity of the public.
             </p>
             <div className="p-8 bg-box rounded-xl mb-12">
-              <p className="text-2xl font-heading font-regular text-black ">
+              <p className="text-xl md:text-2xl font-heading font-regular text-black ">
                 The economic case is significant: excluding
                 persons with disabilities from the labor
                 market can cost countries between <br />
-                <span className="font-bold text-3xl">3 % and 7 % of GDP.3</span>
+                <span className="font-bold text-2xl md:text-3xl">3 % and 7 % of GDP.3</span>
               </p>
             </div>
-            <p className="text-xl text-gray-700 font-regular leading-relaxed mb-10">
+            <p className="text-base md:text-lg text-black font-regular leading-relaxed mb-10">
               This chapter lays the foundation for the report. It situates disability inclusion within
               the human continuum; traces how India’s legal, policy, and institutional landscape
               has evolved; identifies why access remains uneven; and locates the actors working
@@ -126,8 +126,8 @@ export default function Chapter1() {
             </p>
             <div className="space-y-12">
               <div>
-                <h3 className="text-4xl font-heading font-bold text-subHeading mb-10"><span className="border-b-8 border-current  pb-0">1.1</span> How to Read This Report</h3>
-                <p className="text-gray-700 text-xl leading-relaxed">Disability inclusion is a cross-cutting development imperative. However, it is often
+                <h3 className="text-3xl md:text-4xl font-heading font-bold text-subHeading mb-10"><span className="border-b-8 border-current  pb-0">1.1</span> How to Read This Report</h3>
+                <p className="text-black text-base md:text-lg leading-relaxed">Disability inclusion is a cross-cutting development imperative. However, it is often
                   approached through visible failure: a child pushed out of school, a job applicant
                   screened out, a pension denied, or a building constructed as unusable. While
                   these are important entry points, they do not fully explain how such outcomes are
@@ -137,7 +137,7 @@ export default function Chapter1() {
                   analytical lenses organize our inquiry:</p>
               </div>
 
-              <div className="space-y-5 text-xl">
+              <div className="space-y-5 text-base md:text-lg">
                 {[
                   { heading: "Lifecycle Lens:", text: "Exclusion accumulates across the lifecycle, from early identification through schooling, skilling, employment, social protection, and into old age.4 Disability inclusion emerges as a priority long before employment and extends well beyond formal schooling. A child not identified early, or unsupported in school, is disproportionately likely to face exclusion from higher education, work, and income security. This lens also disrupts the notion of disability as a fixed or bounded identity. Individuals may experience disability at different moments, through birth, illness, accident, or aging. It allows for inclusion to be seen as the foundational condition that must be embedded continuously across the lifecycle." },
                   { heading: "Systems Lens:", text: "Here, the focus shifts from when exclusion occurs to why it persists. It recognizes that outcomes such as school dropout, unemployment, or barriers to healthcare are not merely discrete events, but visible expressions of deeper structural constraints. These include inaccessible physical and digital infrastructure, fragmented and siloed service delivery systems, institutional practices that exclude by design, and pervasive social norms shaped by ableism and stigma.5 Addressing the surface without addressing the roots produces gains that are inherently limited and difficult to sustain." },
@@ -148,12 +148,12 @@ export default function Chapter1() {
                       <Astroid className="w-4 h-4 text-astroid   shrink-0" fill="#9196CD" />
                       {item.heading}
                     </div>
-                    <p className="pl-6 mt-1">{item.text}</p>
+                    <p className="pl-6 mt-1 text-black">{item.text}</p>
                   </div>
                 ))}
               </div>
 
-              <p className="text-greay-700 leading-relaxed font-regular text-xl">
+              <p className="text-black leading-relaxed font-regular text-base md:text-lg">
                 Together, these lenses allow the report in moving from isolated outcomes to a
                 patterned explanation. Rather than reducing the analysis to a form of impairment,
                 the report keeps in view the breadth of disability as recognized under the Rights of
@@ -169,20 +169,20 @@ export default function Chapter1() {
           {/* 1.2 */}
           <section>
             <div>
-              <h3 className="flex gap-4 items-start text-4xl font-heading font-bold text-subHeading mb-10">
+              <h3 className="flex gap-4 items-start text-3xl md:text-4xl font-heading font-bold text-subHeading mb-10">
                 <span className="border-b-8 border-current pb-0 shrink-0">1.2</span>
                 <span>How the Terrain of Disability Inclusion was Assembled</span>
               </h3>
-              <p className="text-gray-700 text-xl leading-relaxed mb-10">The disability ecosystem in India has been assembled over time, through policy,
+              <p className="text-black text-base md:text-lg leading-relaxed mb-10">The disability ecosystem in India has been assembled over time, through policy,
                 law, and society. Understanding why the system behaves as it does today require
                 tracing how these layers came together.</p>
             </div>
             <div>
-              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <h3 className="flex gap-4 items-start text-xl md:text-2xl font-heading font-bold text-chHeading mb-10">
                 <span className=" pb-0 shrink-0">1.2.1</span>
                 <span>From Charity to Rights: The Long Shift in Disability Framing </span>
               </h3>
-              <p className="text-gray-700 text-xl leading-relaxed mb-10">
+              <p className="text-black text-base md:text-lg leading-relaxed mb-10">
                 Before disability was framed in terms of rights, it was addressed primarily through a
                 combination of state welfare, philanthropy, family responsibility, and rehabilitationoriented services. In pre-Independence India, services were limited: typically
                 operated by voluntary organizations, a small number of special schools for blind
@@ -191,14 +191,14 @@ export default function Chapter1() {
                 within the household, with families bearing primary responsibility of care, income,
                 and everyday functioning.
               </p>
-              <p className="text-gray-700 text-xl leading-relaxed mb-10">
+              <p className="text-black text-base md:text-lg leading-relaxed mb-10">
                 Post-Independence policy did not fully overcome this tendency to privatize
                 disability. The constitutional promise of equality and social justice opened
                 some space for change, but for many years disability remained within a welfarerehabilitation frame rather than a citizenship frame.9 Persons with disabilities were
                 positioned as recipients of care rather than as people entitled to shape institutions
                 on equal terms.
               </p>
-              <p className="text-gray-700 text-xl leading-relaxed mb-10">
+              <p className="text-black text-base md:text-lg leading-relaxed mb-10">
                 The turn towards a rights-based approach emerged gradually, through both political
                 and institutional change.10 Disability rights movements in India developed alongside
                 other postcolonial struggles over equality and citizenship, challenging models
@@ -213,12 +213,12 @@ export default function Chapter1() {
 
             </div>
             <div>
-              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <h3 className="flex gap-4 items-start text-xl md:text-2xl font-heading font-bold text-chHeading mb-10">
                 <span className=" pb-0 shrink-0">1.2.2</span>
                 <span>International Anchors and Domestic Deepening:
                   How Rights Frameworks Expanded </span>
               </h3>
-              <p className="text-gray-700 text-xl leading-relaxed mb-10">
+              <p className="text-black text-base md:text-lg leading-relaxed mb-10">
                 The 2000s brought another shift. The National Policy for Persons with Disabilities,
                 2006 broadened the framing of inclusion to encompass equal opportunity and
                 participation. More consequentially, India’s ratification of the United Nations
@@ -226,7 +226,7 @@ export default function Chapter1() {
                 domestic policy within a stronger international framework, reinforcing expectations
                 around non-discrimination, accessibility, participation, and accountability.
               </p>
-              <p className="text-gray-700 text-xl leading-relaxed mb-10">
+              <p className="text-black text-base md:text-lg leading-relaxed mb-10">
                 This trajectory culminated in the Rights of Persons with Disabilities Act, 2016, the
                 central legal anchor of the current terrain. In addition to replacing earlier legislation,
                 the Act redefined the scope of disability inclusion. It expanded recognized
@@ -236,7 +236,7 @@ export default function Chapter1() {
                 transport, and information systems. It also established a more formal architecture,
                 with designated authorities and responsibilities across levels of government.
               </p>
-              <p className="text-gray-700 text-xl leading-relaxed mb-10">
+              <p className="text-black text-base md:text-lg leading-relaxed mb-10">
                 Even so, the disability ecosystem cannot be understood through the RPwD Act
                 alone. The Rehabilitation Council of India Act, 1992 established a framework for
                 the training of rehabilitation professionals, while The National Trust Act, 1999
@@ -250,14 +250,14 @@ export default function Chapter1() {
 
 
             <div>
-              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <h3 className="flex gap-4 items-start text-xl md:text-2xl font-heading font-bold text-chHeading mb-10">
                 <span className=" pb-0 shrink-0">1.2.3</span>
                 <span>
                   Expansion Across Domains: How Disability Moved
                   Beyond Disability-Specific Policy
                 </span>
               </h3>
-              <p className="text-gray-700 text-xl leading-relaxed mb-10">
+              <p className="text-black text-base md:text-lg leading-relaxed mb-10">
                 Over time, disability spread into policy domains not originally framed as disabilityspecific. Accessibility became a national agenda through the Accessible India
                 Campaign (Sugamya Bharat Abhiyan), bringing built environments, transport, and
                 ICT into a framework of universal access. Education policy incorporated Children
@@ -269,7 +269,7 @@ export default function Chapter1() {
                 entrepreneurship, digital learning, and assistive technology for persons with
                 disabilities.
               </p>
-              <p className="text-gray-700 text-xl leading-relaxed mb-10">
+              <p className="text-black text-base md:text-lg leading-relaxed mb-10">
                 This is why disability inclusion in India is better understood as the formation of
                 a terrain rather than the accumulation of laws or schemes. As the meaning of
                 disability has evolved, so have the institutions, expectations, and responsibilities
@@ -284,11 +284,11 @@ export default function Chapter1() {
           {/* 1.3 */}
           <section>
             <div>
-              <h3 className="flex gap-4 items-start text-4xl font-heading font-bold text-subHeading mb-10">
+              <h3 className="flex gap-4 items-start text-3xl md:text-4xl font-heading font-bold text-subHeading mb-10">
                 <span className="border-b-8 border-current pb-0 shrink-0">1.3</span>
                 <span>Why Inclusion Remains Uneven</span>
               </h3>
-              <p className="text-gray-700 text-xl leading-relaxed mb-10">
+              <p className="text-black text-base md:text-lg leading-relaxed mb-10">
                 A stronger framework for equity has not necessarily translated into consistent
                 outcomes. The evidence is unambiguous. The UDISE+ 2024–25 report records
                 more than 2.14 million children with special needs enrolled in school, yet only 36%
@@ -301,22 +301,22 @@ export default function Chapter1() {
             </div>
 
             <div className="p-8 bg-box rounded-xl mb-12">
-              <p className="text-2xl font-heading font-regular text-black ">
-                The UDISE+ 2024–25 report records more than <br />   <span className="font-bold text-3xl">2.14 million children with special needs</span> <br /> enrolled in school, yet only 36% of schools have
+              <p className="text-xl md:text-2xl font-heading font-regular text-black ">
+                The UDISE+ 2024–25 report records more than <br />   <span className="font-bold text-2xl md:text-3xl">2.14 million children with special needs</span> <br /> enrolled in school, yet only 36% of schools have
                 the facilities and infrastructure designed for
                 them, and only 55% have ramps with handrails.
               </p>
             </div>
 
             <div>
-              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <h3 className="flex gap-4 items-start text-xl md:text-2xl font-heading font-bold text-chHeading mb-10">
                 <span className=" pb-0 shrink-0">1.3.1</span>
                 <span>
                   Design Mismatch: Systems Built Around
                   a Narrow Norm
                 </span>
               </h3>
-              <p className="text-gray-700 text-xl leading-relaxed mb-10">
+              <p className="text-black text-base md:text-lg leading-relaxed mb-10">
                 The most immediate source of unevenness is the mismatch between the diversity
                 of disability and the uniformity of most institutional design. Schools, hospitals,
                 workplaces, transport systems, and digital platforms were built around a narrow
@@ -331,13 +331,13 @@ export default function Chapter1() {
 
 
             <div>
-              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <h3 className="flex gap-4 items-start text-xl md:text-2xl font-heading font-bold text-chHeading mb-10">
                 <span className=" pb-0 shrink-0">1.3.2</span>
                 <span>
                   State Variation: Uneven Institutional Capacity
                 </span>
               </h3>
-              <p className="text-gray-700 text-xl leading-relaxed mb-10">
+              <p className="text-black text-base md:text-lg leading-relaxed mb-10">
                 Health, education, and social welfare are concurrent or state subjects under
                 India’s constitutional framework. While central legislation may establish rights,
                 implementation depends on state-level capacity and priorities. Whether the
@@ -353,14 +353,14 @@ export default function Chapter1() {
             </div>
 
             <div>
-              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <h3 className="flex gap-4 items-start text-xl md:text-2xl font-heading font-bold text-chHeading mb-10">
                 <span className=" pb-0 shrink-0">1.3.3</span>
                 <span>
                   Shared Stakes: Building Coordination Across
                   Institutions and Sectors
                 </span>
               </h3>
-              <p className="text-gray-700 text-xl leading-relaxed mb-10">
+              <p className="text-black text-base md:text-lg leading-relaxed mb-10">
                 Disability inclusion spans multiple domains – education, health, labor, social
                 justice, rural development, transport, housing, and digital infrastructure. And
                 coordination among these sectors remains limited. Schemes may be well-designed
@@ -369,7 +369,7 @@ export default function Chapter1() {
                 requirements, separate grievance mechanisms, and different implementation
                 timelines.
               </p>
-              <p className="text-gray-700 text-xl leading-relaxed mb-10">
+              <p className="text-black text-base md:text-lg leading-relaxed mb-10">
                 This fragmentation reflects the need for greater alignment and coordination to
                 overcome institutional silos, by centering everyday contexts of disability. Closing
                 the distance between the promise of inclusion and what institutions deliver on the
@@ -381,11 +381,11 @@ export default function Chapter1() {
           {/* 1.4 */}
           <section>
             <div>
-              <h3 className="flex gap-4 items-start text-4xl font-heading font-bold text-subHeading mb-10">
+              <h3 className="flex gap-4 items-start text-3xl md:text-4xl font-heading font-bold text-subHeading mb-10">
                 <span className="border-b-8 border-current pb-0 shrink-0">1.4</span>
                 <span>Making the System Visible</span>
               </h3>
-              <p className="text-gray-700 text-xl leading-relaxed mb-10">
+              <p className="text-black text-base md:text-lg leading-relaxed mb-10">
                 A person does not experience disability in one sector at a time. Their life may involve
                 early diagnosis in the health system, schooling in mainstream or special settings,
                 skill training, attempts to secure employment, recourse to social protection,
@@ -394,17 +394,17 @@ export default function Chapter1() {
                 participation. And at each site, the same structural tensions play out.
               </p>
 
-              <p className="text-black text-xl leading-relaxed mb-1 underline font-bold">Figure 1:</p>
-              <p className="text-black text-xl leading-relaxed mb-6 font-bold">Viewing the Disability Lifecycle through an Iceberg Model</p>
+              <p className="text-black text-base md:text-lg leading-relaxed mb-1 underline font-bold">Figure 1:</p>
+              <p className="text-black text-base md:text-lg leading-relaxed mb-6 font-bold">Viewing the Disability Lifecycle through an Iceberg Model</p>
               <img src="/ch1/iceberg.png" alt="iceberg" className="w-full object-contain mb-10" />
             </div>
-            <p className="text-gray-700 leading-relaxed text-xl mb-10">
+            <p className="text-black leading-relaxed text-base md:text-lg mb-10">
               The iceberg model helps distinguish between visible outcomes and the underlying
               conditions that produce them. At the surface are the exclusion events that tend
               to attract most attention and funding. These are real and significant, but they are
               outcomes, not necessarily causes.
             </p>
-            <p className="text-gray-700 leading-relaxed text-xl mb-10 ">
+            <p className="text-black leading-relaxed text-base md:text-lg mb-10 ">
               Beneath the surface lie the patterns that produce those outcomes, like inaccessible
               infrastructure, poorly trained personnel, and inadequate accommodations. Deeper
               still are the structures that sustain those patterns: policy gaps, weak enforcement
@@ -421,24 +421,24 @@ export default function Chapter1() {
 
 
             <div>
-              <h3 className="flex gap-4 items-start text-2xl font-heading font-bold text-chHeading mb-10">
+              <h3 className="flex gap-4 items-start text-xl md:text-2xl font-heading font-bold text-chHeading mb-10">
                 <span className=" pb-0 shrink-0">1.4.1</span>
                 <span>
                   The Domains of Inclusion: Where Participation
                   is Made and Unmade
                 </span>
               </h3>
-              <p className="text-gray-700 text-xl leading-relaxed mb-10">
+              <p className="text-black text-base md:text-lg leading-relaxed mb-10">
                 The terrain of disability inclusion spans at least five domains, each with its own
                 actors, logic, and failure modes.
               </p>
             </div>
 
-            <div className="space-y-5 text-xl mb-10">
+            <div className="space-y-5 text-base md:text-lg mb-10">
               {[
                 { heading: "Education", text: "is where trajectories are set, often before anyone has named what is happening. It is a powerful cascade, beginning from a missed developmental marker, a delayed referral, a classroom that cannot accommodate differences, a teacher who mistakes disability for low intelligence. By the time a child reaches adolescence without appropriate support, years of compounding disadvantage have already narrowed what remains possible. And yet, the gap between early identification in principle and early identification in practice remains wide." },
                 { heading: "Employment", text: "is where earlier disadvantage either hardens into exclusion or, occasionally, can be interrupted. Skilling programs frequently carry the imprint of what employers are expected to want, which often reflects assumptions about who is “trainable” and for what. Labor markets, meanwhile, are structured around physical and communicative norms that treat departure from them as a problem to be managed rather than a diversity to be designed for." },
-                { heading: "Health systems", text: "are typically where institutional contact begins — and where so much is decided before the rest of the system becomes relevant. Diagnostic accuracy, early intervention, and rehabilitation support are unevenly available across geographies, frequently missing in secondary and tertiary towns and in primary care settings that lack specialist capacity" },
+                { heading: "Health systems", text: "are typically where institutional contact begins — and where so much is decided before the rest of the system becomes relevant. Diagnostic accuracy, early intervention, and rehabilitation support are unevenly available across geographies, frequently missing in secondary and tertiary towns and in primary care settings that lack specialist capacity." },
                 { heading: "Legal and civic life", text: "speaks to how policy mandates and social protections shape inclusion. Courts, grievance redressal channels, and disability commissioners are, at their best, the architecture that gives other commitments teeth. This is characteristically slow, expensive, and inaccessible to many of those it is meant to serve, and more effective for those with resources to sustain complaints over time." },
                 { heading: "Social participation", text: " is where the cumulative effects of exclusion across other spheres of life register most concretely, in who is present within public life and who is not. It encompasses movement through shared spaces, civic engagement, and the degree to which people with disabilities are imagined as ordinary participants in community life, rather than exceptions to it." },
               ].map((item, i) => (
@@ -451,7 +451,7 @@ export default function Chapter1() {
               ))}
             </div>
 
-            <p className="text-greay-700 leading-relaxed font-regular text-xl">
+            <p className="text-greay-700 leading-relaxed font-regular text-base md:text-lg">
               Today, India’s disability rights framework is more robust than it was a decade
               ago. Yet practice tells an uneven story. Redistributive mechanisms like disability
               pensions, assistive technology schemes, and care support remain markers of
@@ -470,12 +470,12 @@ export default function Chapter1() {
           {/* 1.5 */}
           <section>
             <div>
-              <h3 className="flex gap-4 items-start text-4xl font-heading font-bold text-subHeading mb-10">
+              <h3 className="flex gap-4 items-start text-3xl md:text-4xl font-heading font-bold text-subHeading mb-10">
                 <span className="border-b-8 border-current pb-0 shrink-0">1.5</span>
                 <span>Who Makes the Ecosystem
                   Function</span>
               </h3>
-              <p className="text-gray-700 text-xl leading-relaxed mb-10">
+              <p className="text-black text-base md:text-lg leading-relaxed mb-10">
                 The ecosystem is experienced through sites like block offices, hospital
                 assessments, and classrooms by people with disabilities in India. Behind every
                 policy mandate and delivery gap is a set of actors whose decisions and span of
@@ -484,8 +484,8 @@ export default function Chapter1() {
                 they move, and what helps them reach the communities they serve.
               </p>
 
-              <p className="text-black text-xl leading-relaxed mb-1 underline font-bold">Figure 2:</p>
-              <p className="text-black text-xl leading-relaxed mb-6 font-bold">Actor map of the disability inclusion ecosystem by layer, type, role, mandates,
+              <p className="text-black text-base md:text-lg leading-relaxed mb-1 underline font-bold">Figure 2:</p>
+              <p className="text-black text-base md:text-lg leading-relaxed mb-6 font-bold">Actor map of the disability inclusion ecosystem by layer, type, role, mandates,
                 and engagement</p>
 
               <div className="overflow-x-auto border border-border mb-6">

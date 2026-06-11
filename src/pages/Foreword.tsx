@@ -6,19 +6,30 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 export default function Foreword() {
   return (
     <Layout>
-      <div className="bg-muted min-h-screen py-16 lg:py-24">
-        <div className="container mx-auto px-6 max-w-3xl bg-white shadow-sm border border-border rounded-2xl p-8 lg:p-16">
+      <div className="py-20 bg-chHero" >
+        <div className="container mx-auto px-6 max-w-4xl">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+            <div className="text-5xl md:text-7xl font-accent  text-secondary leading-none mb-2">Foreword</div>
+            <h1 className="text-3xl md:text-5xl font-accent text-secondary leading-tight uppercase tracking-wide">
+              <p className="text-lg md:text-xl text-secondary font-extrabold  font-sans">ALOKA MAJUMDAR</p>
+              <p className="text-base md:text-lg  font-sans">MD, Head of Sustainability</p>
+              <p className="text-base md:text-lg font-sans ">HSBC India</p>
+            </h1> 
+
+          </motion.div>
+        </div>
+      </div>
+      <div className="bg-white min-h-screen py-16 md:py-24">
+        <div className="container mx-auto px-6 max-w-4xl bg-white   rounded-2xl ">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-3xl font-heading font-bold text-chapter mb-2 uppercase tracking-wide">Foreword</h1>
-            <p className="text-lg text-secondary font-medium ">ALOKA MAJUMDAR,</p>
-            <p className="text-lg text-black font-regular">MD, Head of Sustainability</p>
-            <p className="text-lg text-black font-regular ">HSBC India</p>
-            <div className="bg-secondary  w-full h-px my-1 mb-8" />
-            <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+            {/* <h1 className="text-3xl font-heading font-bold text-chapter mb-2 uppercase tracking-wide">Foreword</h1> */}
+
+            {/* <div className="bg-secondary  w-full h-px my-1 mb-8" /> */}
+            <div className="prose md:prose-lg max-w-none text-black space-y-6">
 
               <p>
                 The cost of exclusion is far greater than the cost of inclusion. For persons with disabilities, exclusion is designed into the fabric of everyday life. It reveals itself in the systemic choices that determine who participates and who is left out: how classrooms are built, how work is organized, how public services function and whose voices inform them. Disability itself is only part of the constraint. The greater burden lies in negotiating with barriers that persist through design, where infrastructure, social attitudes, policy and power intersect.
