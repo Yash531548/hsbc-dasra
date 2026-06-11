@@ -420,12 +420,19 @@ export default function Chapter6() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-2">
               {sectorExperts.map((expert, i) => (
                 // <p key={i} className="text-base text-black leading-relaxed">• {expert}</p>
+                // <p
+                //   key={i}
+                //   className={`text-base text-black leading-relaxed ${expert ? "before:content-['•'] before:mr-2" : ""
+                //     }`}
+                // >
+                //   {expert}
+                // </p>
                 <p
                   key={i}
-                  className={`text-base text-black leading-relaxed ${expert ? "before:content-['•'] before:mr-2" : ""
+                  className={`text-base text-black leading-relaxed ${expert ? "pl-4 -indent-4" : ""
                     }`}
                 >
-                  {expert}
+                  {expert ? `• ${expert}` : ""}
                 </p>
               ))}
             </div>
@@ -437,12 +444,19 @@ export default function Chapter6() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-2">
               {surveyRespondents.map((org, i) => (
                 // <p key={i} className="text-base text-black leading-relaxed">• {org}</p>
+                // <p
+                //   key={i}
+                //   className={`text-base text-black leading-relaxed ${org ? "before:content-['•'] before:mr-2" : ""
+                //     }`}
+                // >
+                //   {org}
+                // </p>
                 <p
                   key={i}
-                  className={`text-base text-black leading-relaxed ${org ? "before:content-['•'] before:mr-2" : ""
+                  className={`text-base text-black leading-relaxed ${org ? "pl-2 -indent-4" : ""
                     }`}
                 >
-                  {org}
+                  {org ? `• ${org}` : ""}
                 </p>
               ))}
             </div>

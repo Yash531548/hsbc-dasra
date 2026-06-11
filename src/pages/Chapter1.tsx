@@ -51,7 +51,7 @@ export default function Chapter1() {
               2.21% of the population, and the NSS 76th Round estimated disability prevalence at
               2.2%. These differences shape who is counted, who can claim support, and whose
               needs are planned for. Measurement, in this sense, helps define the boundaries of
-              public responsibility
+              public responsibility.
             </p>
 
             <div className="p-8 bg-box rounded-xl mb-12">
@@ -438,7 +438,7 @@ export default function Chapter1() {
               {[
                 { heading: "Education", text: "is where trajectories are set, often before anyone has named what is happening. It is a powerful cascade, beginning from a missed developmental marker, a delayed referral, a classroom that cannot accommodate differences, a teacher who mistakes disability for low intelligence. By the time a child reaches adolescence without appropriate support, years of compounding disadvantage have already narrowed what remains possible. And yet, the gap between early identification in principle and early identification in practice remains wide." },
                 { heading: "Employment", text: "is where earlier disadvantage either hardens into exclusion or, occasionally, can be interrupted. Skilling programs frequently carry the imprint of what employers are expected to want, which often reflects assumptions about who is “trainable” and for what. Labor markets, meanwhile, are structured around physical and communicative norms that treat departure from them as a problem to be managed rather than a diversity to be designed for." },
-                { heading: "Health systems", text: "are typically where institutional contact begins — and where so much is decided before the rest of the system becomes relevant. Diagnostic accuracy, early intervention, and rehabilitation support are unevenly available across geographies, frequently missing in secondary and tertiary towns and in primary care settings that lack specialist capacity" },
+                { heading: "Health systems", text: "are typically where institutional contact begins — and where so much is decided before the rest of the system becomes relevant. Diagnostic accuracy, early intervention, and rehabilitation support are unevenly available across geographies, frequently missing in secondary and tertiary towns and in primary care settings that lack specialist capacity." },
                 { heading: "Legal and civic life", text: "speaks to how policy mandates and social protections shape inclusion. Courts, grievance redressal channels, and disability commissioners are, at their best, the architecture that gives other commitments teeth. This is characteristically slow, expensive, and inaccessible to many of those it is meant to serve, and more effective for those with resources to sustain complaints over time." },
                 { heading: "Social participation", text: " is where the cumulative effects of exclusion across other spheres of life register most concretely, in who is present within public life and who is not. It encompasses movement through shared spaces, civic engagement, and the degree to which people with disabilities are imagined as ordinary participants in community life, rather than exceptions to it." },
               ].map((item, i) => (

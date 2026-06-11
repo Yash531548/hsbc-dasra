@@ -27,7 +27,7 @@ export default function Chapter2() {
 
           <section>
             <p className="text-base md:text-lg text-black leading-relaxed font-medium mb-10">
-              The nonprofit sector in disability inclusion occupies a position that is structurally unusual and rarely named as such. It sits at the intersection of the state, the market, the family, and the community, translating between systems that do not always speak to each other, compensating for functions that have been formally claimed but practically abandoned, and holding together the continuity that no single system has been designed to provide. While inclusion is shaped by multiple actors, this chapter focuses on nonprofits as a central site of action. It traces how organizations have accumulated a form of knowledge about disability exclusion that exceeds what any formal system has been willing to recognize, over decades of sustained presence
+              The nonprofit sector in disability inclusion occupies a position that is structurally unusual and rarely named as such. It sits at the intersection of the state, the market, the family, and the community, translating between systems that do not always speak to each other, compensating for functions that have been formally claimed but practically abandoned, and holding together the continuity that no single system has been designed to provide. While inclusion is shaped by multiple actors, this chapter focuses on nonprofits as a central site of action. It traces how organizations have accumulated a form of knowledge about disability exclusion that exceeds what any formal system has been willing to recognize, over decades of sustained presence.
             </p>
             <p className="text-base md:text-lg text-black leading-relaxed font-medium mb-10">
               The chapter draws on survey data and qualitative accounts from across the nonprofit landscape. The survey reveals a sector that is older and more experienced than it is typically understood to be, working across a wider range of functions and geographies than any single program logic would predict. The qualitative material sits alongside this and surfaces what the numbers cannot fully explain: how organizations understand their own position, what they carry that was never formally assigned to them, and what the accumulated weight of that carrying looks like from the inside.
@@ -66,8 +66,8 @@ export default function Chapter2() {
                   <thead>
                     <tr className="bg-secondary text-white">
                       <th className="text-left px-3 md:px-5 py-3 md:py-4 font-bold w-1/2 border-r border-white/20">Years of Operation</th>
-                      <th className="text-left px-3 md:px-5 py-3 md:py-4 font-bold w-1/4 border-r border-white/20">% of Orgs</th>
-                      <th className="text-left px-3 md:px-5 py-3 md:py-4 font-bold w-1/4">Count</th>
+                      <th className="text-center px-3 md:px-5 py-3 md:py-4 font-bold w-1/4 border-r border-white/20 ">% of Orgs</th>
+                      <th className="text-center px-3 md:px-5 py-3 md:py-4 font-bold w-1/4">Count</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -118,8 +118,8 @@ export default function Chapter2() {
                   <thead>
                     <tr className="bg-secondary text-white">
                       <th className="text-left px-3 md:px-5 py-3 md:py-4 font-bold w-1/2 border-r border-white/20">Annual Budget (FY 2025-26)</th>
-                      <th className="text-left px-3 md:px-5 py-3 md:py-4 font-bold w-1/4 border-r border-white/20">% of Orgs</th>
-                      <th className="text-left px-3 md:px-5 py-3 md:py-4 font-bold w-1/4">Count</th>
+                      <th className="text-center px-3 md:px-5 py-3 md:py-4 font-bold w-1/4 border-r border-white/20">% of Orgs</th>
+                      <th className="text-center px-3 md:px-5 py-3 md:py-4 font-bold w-1/4">Count</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -165,7 +165,7 @@ export default function Chapter2() {
             <p className="text-black text-lg md:text-xl leading-relaxed mb-1 underline font-bold">Figure: 3</p>
             <p className="text-black text-lg md:text-xl leading-relaxed mb-6 font-bold">Geographical spread of nonprofits</p>
             <img src="/ch2/ch2Fig3.png" alt="Geographical spread of nonprofits" className="w-full object-contain mb-4" />
-            <p className="text-sm text-gray-500  mb-10 leading-relaxed">
+            <p className="text-base text-black  mb-10 leading-relaxed">
               (Note: The above data adds up to more than 100% as the respondents could select multiple choices. Hyperlocal work adjusted down to 18% based on its 18.34% share, state/ regional adjusted down to 64% based on its 64.22% share and district / city adjusted to 40% based on its 40.36% share).
             </p>
             <p className="text-black text-base md:text-lg leading-relaxed mb-10">
@@ -182,7 +182,7 @@ export default function Chapter2() {
             <p className="text-black text-lg md:text-xl leading-relaxed mb-1 underline font-bold">Figure: 4</p>
             <p className="text-black text-lg md:text-xl leading-relaxed mb-6 font-bold">Leadership and governance structure of nonprofits</p>
             <img src="/ch2/ch2Fig4.png" alt="Leadership and governance structure of nonprofits" className="w-full object-contain mb-4" />
-            <p className="text-sm text-gray-500  mb-10 leading-relaxed">
+            <p className="text-base text-black  mb-10 leading-relaxed">
               (Note: Because organizations could select multiple overlapping leadership structures, the percentages add up to more than 100%. Additionally, 7 organizations selected "Prefer not to say", and a few exclusively selected "We do not have a Board/Advisory structure currently").
             </p>
             <p className="text-black text-base md:text-lg leading-relaxed mb-10">
@@ -214,7 +214,7 @@ export default function Chapter2() {
             <p className="text-black text-lg md:text-xl leading-relaxed mb-1 underline font-bold">Figure: 5</p>
             <p className="text-black text-lg md:text-xl leading-relaxed mb-6 font-bold">Primary Areas of Work (%) - n=109</p>
             <img src="/ch2/ch2Fig5.png" alt="Primary Areas of Work" className="w-full object-contain mb-4" />
-            <p className="text-sm text-gray-500  mb-10 leading-relaxed">
+            <p className="text-base text-black  mb-10 leading-relaxed">
               (Note: Because organizations could select multiple overlapping leadership structures, the percentages add up to more than 100%)
             </p>
             <p className="text-black text-base md:text-lg leading-relaxed mb-12">
@@ -258,7 +258,7 @@ export default function Chapter2() {
                 </tbody>
               </table>
             </div>
-            <p className="text-sm text-gray-500  mb-10 leading-relaxed">
+            <p className="text-base text-black  mb-10 leading-relaxed">
               (Note: Organizations could select multiple categories; percentages reflect reported coverage, not distribution of need or mutually exclusive shares. The "Other" category includes write-in responses such as deafblindness, clubfoot, invisible disabilities like leprosy-induced sensory loss, and blood disorders like hemophilia).
             </p>
             <p className="text-black text-base md:text-lg leading-relaxed mb-12">
@@ -301,7 +301,7 @@ export default function Chapter2() {
                 </tbody>
               </table>
             </div>
-            <p className="text-sm text-gray-500  mb-10 leading-relaxed">
+            <p className="text-base text-black  mb-10 leading-relaxed">
               (Note: Organizations could select multiple categories; percentages reflect reported coverage, not distribution of need or mutually exclusive shares.)
             </p>
             <p className="text-black leading-relaxed mb-12 text-base md:text-lg">
