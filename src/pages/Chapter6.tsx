@@ -334,11 +334,11 @@ export default function Chapter6() {
         <div className="container mx-auto px-6 max-w-4xl space-y-20">
 
           <section>
-            <p className="text-lg leading-relaxed text-gray-700 mb-10">
+            <p className="text-lg leading-relaxed text-black mb-10">
               Change in disability inclusion does not happen at a uniform speed, necessarily. Some priorities require immediate strengthening within existing systems, while others depend on longer-term institutional and narrative shifts. The three horizons framework helps locate these efforts across time: from access to formal recognition and services, to institutional pathways for inclusion, to systems integration and field leadership. Read this way, the horizon model is a map of overlapping responsibilities that must deepen together.
             </p>
 
-            <p className="text-lg leading-relaxed text-gray-700 mb-10">
+            <p className="text-lg leading-relaxed text-black mb-10">
               The Three Horizons framework offers a lens to understand this evolution as a set of overlapping and mutually reinforcing shifts in focus and ambition. Rather than moving on from earlier roles, ecosystem actors are required to operate across horizons simultaneously: strengthening existing systems, embedding inclusion within institutions, and enabling long-term alignment and leadership across the field. The cornerstones identified in this report act as pathways through these horizons, deepening inclusion for the future, while remaining grounded in present realities.
             </p>
             <img src="/ch6/ch6Fig11.png" alt="Three disability inclusion horizons" className="w-full object-contain mb-4" />
@@ -359,16 +359,16 @@ export default function Chapter6() {
               ].map((horizon, i) => (
                 <div key={i}>
                   <p className="text-black text-xl leading-relaxed mb-2 font-bold">{horizon.title}</p>
-                  <p className="text-lg leading-relaxed text-gray-700">{horizon.text}</p>
+                  <p className="text-lg leading-relaxed text-black">{horizon.text}</p>
                 </div>
               ))}
             </div>
 
-            <p className="text-gray-700 text-xl leading-relaxed mb-10">
+            <p className="text-black text-xl leading-relaxed mb-10">
               Taken together, the Three Horizons underscore a central insight of this report: the future of disability inclusion in India will be built on holding the tension between immediate delivery and long‑term transformation. Progress will be driven by actors and investments capable of working across horizons, responding to urgent needs while simultaneously building the institutional, systemic, and leadership foundations required for durable inclusion.
             </p>
             <p className="text-black text-xl leading-relaxed mb-2 font-bold">Supporting this mandate is not only a strategic imperative for the sector, but a necessary condition for achieving equitable and inclusive development at scale.</p>
-            <p className="text-gray-700 text-xl leading-relaxed mb-10">
+            <p className="text-black text-xl leading-relaxed mb-10">
               Please note: The Three Horizons Framework is a foresight model used to manage transformational change. Horizon 1 represents the current system and its declining relevance; Horizon 2 involves the "pockets of the future" or innovations that disrupt the status quo; and Horizon 3 envisions the long-term systemic shifts required for a sustainable future. Organizations use this to balance immediate needs with long-term field-building goals.
             </p>
           </section>
@@ -379,22 +379,22 @@ export default function Chapter6() {
 
             <h3 className="text-2xl font-heading font-bold text-subHeading mb-8">Methodology Note</h3>
 
-            <p className="text-lg leading-relaxed text-gray-700 mb-8">
+            <p className="text-lg leading-relaxed text-black mb-8">
               This report draws on a mixed-methods research design combining secondary research, primary qualitative inquiry, and a nonprofit diagnostic survey.
             </p>
-            <p className="text-lg leading-relaxed text-gray-700 mb-8">
+            <p className="text-lg leading-relaxed text-black mb-8">
               The secondary research included a review of laws, policies, schemes, judicial developments, published literature, and available sectoral data relevant to disability inclusion in India. This helped situate the study within the current policy and institutional landscape and informed the analytical lenses used in the report.
             </p>
-            <p className="text-lg leading-relaxed text-gray-700 mb-8">
+            <p className="text-lg leading-relaxed text-black mb-8">
               The primary research consisted of 23 semi-structured interviews with stakeholders from the disability ecosystem, including nonprofit leaders, disability rights practitioners, philanthropic actors, researchers, and other sector enablers. In addition, two FGDs were conducted with 9 nonprofit practitioners to deepen understanding of shared organizational realities, including collaboration, capacity constraints, and ecosystem gaps.
             </p>
-            <p className="text-lg leading-relaxed text-gray-700 mb-8">
+            <p className="text-lg leading-relaxed text-black mb-8">
               To complement the qualitative inquiry, Dasra administered the <em>Disability NGOs Capacity & Ecosystem Diagnostic Survey</em>, which was circulated online through Dasra's networks as well as partner and ecosystem networks. It was designed as a structured diagnostic tool to gather information on organizational scale, budgets, geographic reach, leadership composition, disability focus, areas of work, collaboration patterns, operational bottlenecks, and short- and long-term capacity needs. Following final data cleaning, three duplicate survey responses were removed. The final analytical sample comprises 109 organizations.
             </p>
-            <p className="text-lg leading-relaxed text-gray-700 mb-8">
+            <p className="text-lg leading-relaxed text-black mb-8">
               The study used purposive and convenience sampling across its primary research components. As a result, the findings are indicative rather than statistically representative of the disability ecosystem in India. Organizations and actors that are smaller, less networked, more informally organized, less digitally connected, or based in remote or conflict geographies may be underrepresented.
             </p>
-            <p className="text-lg leading-relaxed text-gray-700 mb-10">
+            <p className="text-lg leading-relaxed text-black mb-10">
               <strong>Limitations</strong>: While this research surfaces critical patterns, tensions, and operating realities across the ecosystem, several limitations must be acknowledged. First, the study may underrepresent smaller, informal, or less networked actors who often operate outside established visibility. Furthermore, the analysis maintains an implicit focus on civil society; consequently, the specific roles of the family, community, the state, and the market in ensuring disability inclusion have been explored only in a limited manner. Finally, the findings and interpretations may be influenced by our inherent bias and positioning as a sector intermediary within the philanthropic landscape.
             </p>
           </section>
@@ -403,13 +403,13 @@ export default function Chapter6() {
           <section>
             <h3 className="text-3xl font-heading font-bold text-subHeading mb-8">Acknowledgements</h3>
 
-            <p className="text-lg leading-relaxed text-gray-700 mb-8">
+            <p className="text-lg leading-relaxed text-black mb-8">
               This report was developed as part of HSBC India's partnership with Dasra to strengthen the disability ecosystem in India through a landscape study, stakeholder consultations, a nonprofit diagnostic survey, and the design of a longer-term ecosystem-strengthening initiative. It builds on a shared commitment to examining disability inclusion not as a narrow sectoral concern, but as a structural question that cuts across institutions, lifecycles, and systems.
             </p>
-            <p className="text-lg leading-relaxed text-gray-700 mb-8">
+            <p className="text-lg leading-relaxed text-black mb-8">
               We are grateful to HSBC India for their support, partnership, and belief in the importance of investing in evidence, institutional strengthening, and long-horizon thinking for disability inclusion. We are especially thankful to Aloka Majumdar for her stewardship of this work and for helping anchor the report within a broader commitment to strategic, sustained action on disability inclusion. The research and report were led by the Research and Insights team at Dasra, in collaboration with Cohorts & Training, and Catalytic Philanthropy teams, with contributions spanning research design, stakeholder engagement, analysis, synthesis, and strategic direction. The broader project team and leadership team guiding this work included Neera Nundy, Deval Sanghavi, Ami Misra, Pratyaksha Jha, Yash Thakoor, Rukmini Banerjee, Arshiya Uraizee, Unaiza Rajan, Kavneet Kaur, Jija Dutt, Harshita Maheshwari, Shrestha Satpathy, Divya Puri, Jessica Bernard, Gaurvi Singhvi, and Ayush Mehrotra. We extend our sincere appreciation to the nonprofit leaders, disability rights practitioners, funders, researchers, intermediaries, and other ecosystem actors who shared their time, experiences, and reflections with us through interviews, focus group discussions, and consultations. Their insights made it possible to understand the disability ecosystem through the operational realities, tensions, and forms of care, translation, and continuity that hold it together in practice. The report also draws on the responses of 109 organizations that participated in the online survey, whose contributions helped anchor the analysis in patterns visible across the broader nonprofit landscape. We would like to extend our sincere gratitude to Atypical Advantage for serving as the accessibility consultant for this report and for their valuable guidance in helping make this publication more inclusive and accessible.
             </p>
-            <p className="text-lg leading-relaxed text-gray-700 mb-10">
+            <p className="text-lg leading-relaxed text-black mb-10">
               Above all, we acknowledge persons with disabilities, caregivers, and community actors whose lives, labor, and daily negotiations with exclusion sit beneath every institutional question this report asks. Even where they are not always directly visible in the research process, their realities shape the field, and their experiences remain central to any meaningful account of disability inclusion in India. We are conscious that this report draws on knowledge produced through lived experience, movement-building, practice, and long years of work across the ecosystem. We hope it contributes, in however partial a way, to efforts aimed at building a more accountable, inclusive, and dignified social order.
             </p>
           </section>
@@ -419,10 +419,10 @@ export default function Chapter6() {
             <h3 className="text-2xl font-heading font-bold text-chHeading mb-8">List of Sector Experts and Practitioners (A-Z)</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-2">
               {sectorExperts.map((expert, i) => (
-                // <p key={i} className="text-base text-gray-700 leading-relaxed">• {expert}</p>
+                // <p key={i} className="text-base text-black leading-relaxed">• {expert}</p>
                 <p
                   key={i}
-                  className={`text-base text-gray-700 leading-relaxed ${expert ? "before:content-['•'] before:mr-2" : ""
+                  className={`text-base text-black leading-relaxed ${expert ? "before:content-['•'] before:mr-2" : ""
                     }`}
                 >
                   {expert}
@@ -436,10 +436,10 @@ export default function Chapter6() {
             <h3 className="text-2xl font-heading font-bold text-chHeading mb-8">List of Survey Respondents (A-Z)</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-2">
               {surveyRespondents.map((org, i) => (
-                // <p key={i} className="text-base text-gray-700 leading-relaxed">• {org}</p>
+                // <p key={i} className="text-base text-black leading-relaxed">• {org}</p>
                 <p
                   key={i}
-                  className={`text-base text-gray-700 leading-relaxed ${org ? "before:content-['•'] before:mr-2" : ""
+                  className={`text-base text-black leading-relaxed ${org ? "before:content-['•'] before:mr-2" : ""
                     }`}
                 >
                   {org}
@@ -451,7 +451,7 @@ export default function Chapter6() {
           {/* REFERENCES */}
           <section>
             <h2 className="text-4xl font-accent font-bold text-secondary uppercase tracking-wide mb-10">References</h2>
-            <ol className="space-y-4 text-sm text-gray-700 leading-relaxed list-none">
+            <ol className="space-y-4 text-sm text-black leading-relaxed list-none">
               {references.map((ref, i) => (
                 <li key={i} className="flex gap-3">
                   <span className="shrink-0 font-bold text-gray-500">{i + 1}.</span>

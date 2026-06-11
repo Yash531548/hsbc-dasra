@@ -6,12 +6,20 @@ import { ArrowLeft, ArrowRight, Astroid } from "lucide-react";
 export default function ExecutiveSummary() {
   return (
     <Layout>
-      <div className="bg-white py-16 lg:py-24">
+
+      <div className="py-20 bg-chHero" >
         <div className="container mx-auto px-6 max-w-4xl">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <h1 className="text-4xl lg:text-5xl font-heading font-bold text-secondary mb-8">Executive Summary</h1>
+            <div className="text-7xl font-accent  text-secondary leading-none mb-2">Executive Summary</div>
+          </motion.div>
+        </div>
+      </div>
+      <div className="bg-white py-16 md:py-24 ">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+            {/* <h1 className="text-4xl lg:text-5xl font-heading font-bold text-secondary mb-8">Executive Summary</h1> */}
 
-            <p className="text-lg text-gray-700 leading-relaxed mb-10">
+            <p className="text-lg text-black leading-relaxed mb-10">
               Disability is often made to appear as something contained within the body or the mind:
               an impairment, a limitation, a difference to be named and managed. But exclusion is
               produced in the world around it — in institutions, infrastructures, and norms that decide
@@ -29,7 +37,7 @@ export default function ExecutiveSummary() {
               </p>
             </div>
 
-            <p className="text-lg text-gray-700 leading-relaxed mb-10">Across education, employment, healthcare, public infrastructure, and civic life, access
+            <p className="text-lg text-black leading-relaxed mb-10">Across education, employment, healthcare, public infrastructure, and civic life, access
               is uneven, fragmented, and contingent on individual navigation rather than institutional
               readiness. These exclusions are not incidental. They shape autonomy, participation,
               household resilience, and economic life, with workforce non-participation by persons
@@ -38,7 +46,7 @@ export default function ExecutiveSummary() {
               are anticipated, whose are treated as exceptions, and who is left negotiating for entry</p>
 
 
-            <p className="text-lg text-gray-700 leading-relaxed mb-10">This report draws on secondary research, 23 semi-structured interviews, two focus group
+            <p className="text-lg text-black leading-relaxed mb-10">This report draws on secondary research, 23 semi-structured interviews, two focus group
               discussions (FGDs), and a diagnostic survey of 109 disability-focused nonprofits. The
               findings are intended as a landscape diagnostic, with a focus on civil society action, rather
               than a representative census. While the report surfaces patterns, tensions, and operating
@@ -63,7 +71,7 @@ export default function ExecutiveSummary() {
               </div>
             </div>
 
-            <p className="text-lg text-gray-700 leading-relaxed mb-10">This report draws on secondary research, 23 semi-structured interviews, two focus group
+            <p className="text-lg text-black leading-relaxed mb-10">This report draws on secondary research, 23 semi-structured interviews, two focus group
               discussions (FGDs), and a diagnostic survey of 109 disability-focused nonprofits. The
               findings are intended as a landscape diagnostic, with a focus on civil society action, rather
               than a representative census. While the report surfaces patterns, tensions, and operating

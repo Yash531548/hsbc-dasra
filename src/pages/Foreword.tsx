@@ -14,12 +14,12 @@ export default function Foreword() {
               <p className="text-xl text-secondary font-extrabold  font-sans">ALOKA MAJUMDAR</p>
               <p className="text-lg  font-sans">MD, Head of Sustainability</p>
               <p className="text-lg font-sans ">HSBC India</p>
-            </h1>
+            </h1> 
 
           </motion.div>
         </div>
       </div>
-      <div className="bg-white min-h-screen py-6">
+      <div className="bg-white min-h-screen py-16 md:py-24">
         <div className="container mx-auto px-6 max-w-4xl bg-white   rounded-2xl ">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -29,7 +29,7 @@ export default function Foreword() {
             {/* <h1 className="text-3xl font-heading font-bold text-chapter mb-2 uppercase tracking-wide">Foreword</h1> */}
 
             {/* <div className="bg-secondary  w-full h-px my-1 mb-8" /> */}
-            <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+            <div className="prose prose-lg max-w-none text-black space-y-6">
 
               <p>
                 The cost of exclusion is far greater than the cost of inclusion. For persons with disabilities, exclusion is designed into the fabric of everyday life. It reveals itself in the systemic choices that determine who participates and who is left out: how classrooms are built, how work is organized, how public services function and whose voices inform them. Disability itself is only part of the constraint. The greater burden lies in negotiating with barriers that persist through design, where infrastructure, social attitudes, policy and power intersect.
